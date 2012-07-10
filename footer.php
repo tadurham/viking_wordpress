@@ -10,18 +10,18 @@
 ?>
 
 	</div><!-- #main -->
+</div><!-- .container -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<?php do_action( 'viking_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'viking' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'viking' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'viking' ), 'viking', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- .site-footer .site-footer -->
-</div><!-- #page .hfeed .site -->
+<footer id="footer">
+    <div class="content">
+        <div class="container">
+            <p>Footer Navigation Menu</p>
+        </div>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
 
+</div> <!-- !#gradient -->
 </body>
 </html>

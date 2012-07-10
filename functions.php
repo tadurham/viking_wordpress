@@ -39,7 +39,7 @@ function viking_setup() {
 	/**
 	 * Custom Theme Options
 	 */
-	//require( get_template_directory() . '/inc/theme-options/theme-options.php' );
+	require( get_template_directory() . '/inc/theme-options/theme-options.php' );
 
 	/**
 	 * WordPress.com-specific functions and definitions
@@ -65,11 +65,13 @@ function viking_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/**
-	 * This theme uses wp_nav_menu() in one location.
+	 * Register menus
 	 */
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'viking' ),
-	) );
+	register_nav_menus( 
+        array(
+            'primary' => 'Primary Menu',
+        )
+	);
 
 	/**
 	 * Add support for the Aside Post Formats
@@ -85,15 +87,24 @@ add_action( 'after_setup_theme', 'viking_setup' );
  * @since Viking 1.0
  */
 function viking_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Sidebar', 'viking' ),
-		'id' => 'sidebar-1',
+  $sidebars = array('Right Sidebar', 'Pre Footer');
+  $sidebarsDescription = array('located on the right side of the page', 'located just before the footer section');
+  $count=0;
+  foreach($sidebars as $sidebar) {
+    register_sidebar(
+      array(
+        'id'            => sanitize_title($sidebar),
+        'name'          => $sidebar,
+        'description'   => $sidebarsDescription[$count],
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
+		'after_title' => '</h1>'
+      ));
+    $count++;
+  }
 }
+
 add_action( 'widgets_init', 'viking_widgets_init' );
 
 /**
@@ -120,3 +131,6 @@ add_action( 'wp_enqueue_scripts', 'viking_scripts' );
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
+
+/*---- Disable admin bar ----*/
+add_filter( 'show_admin_bar', '__return_false' );
