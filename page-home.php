@@ -17,7 +17,7 @@
                 
                     <div class="contentContainer">
                         <div id="hero">
-                            <img src="http://taylordurham.com/loremgenerator/code.php?x=712x335/dddddd/bbbbbb/" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/hero_1.jpg" alt="" />
                         </div>
                         <?php get_sidebar('right-sidebar'); ?>
                         <div class="clearFix"></div>
@@ -30,7 +30,7 @@
                             <h3>Find A Class</h3>
                             <div class="copy">
                                 <div class="image">
-                                    <img src="http://taylordurham.com/loremgenerator/code.php?x=220x160/dddddd/bbbbbb/" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/callout_findAClass.jpg" alt="" />
                                 </div>
                                 <h4>Learn about our Loyalty Program</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
@@ -41,7 +41,7 @@
                             <h3>Specials And Promotions</h3>
                             <div class="copy">
                                 <div class="image">
-                                    <img src="http://taylordurham.com/loremgenerator/code.php?x=220x160/dddddd/bbbbbb/" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/callout_specialsAndPromotions.jpg" alt="" />
                                 </div>
                                 <h4>Smaller Title Text</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
@@ -52,7 +52,7 @@
                             <h3>Sew Savvy Savings</h3>
                             <div class="copy">
                                 <div class="image">
-                                    <img src="http://taylordurham.com/loremgenerator/code.php?x=220x160/dddddd/bbbbbb/" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/callout_sewSavvySavings.jpg" alt="" />
                                 </div>
                                 <h4>Smaller Title Text</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
@@ -63,7 +63,7 @@
                             <h3>Products</h3>
                             <div class="copy">
                                 <div class="image">
-                                    <img src="http://taylordurham.com/loremgenerator/code.php?x=220x160/dddddd/bbbbbb/" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/callout_products.jpg" alt="" />
                                 </div>
                                 <h4>Smaller Title Text</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>

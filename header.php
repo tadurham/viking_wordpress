@@ -11,7 +11,6 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -47,6 +46,7 @@
 <div class="container">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
+        <a id="mainLogoRibbon" href="<?php bloginfo('url'); ?>/">Husqvarna Viking Sewing Gallery</a>
 		<nav role="navigation" class="site-navigation main-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>
