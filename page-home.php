@@ -34,7 +34,7 @@
                                 </div>
                                 <h4>Learn about our Loyalty Program</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
-                                <p>Call to action button</p>
+                                <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
                         </div>
                         <div class="callout">
@@ -45,7 +45,7 @@
                                 </div>
                                 <h4>Smaller Title Text</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
-                                <p>Call to action button</p>
+                                <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
                         </div>
                         <div class="callout">
@@ -56,7 +56,7 @@
                                 </div>
                                 <h4>Smaller Title Text</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
-                                <p>Call to action button</p>
+                                <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
                         </div>
                         <div class="callout last">
@@ -67,7 +67,7 @@
                                 </div>
                                 <h4>Smaller Title Text</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
-                                <p>Call to action button</p>
+                                <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
                         </div>
                         <div class="clearFix"></div>

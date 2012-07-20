@@ -103,9 +103,10 @@ h3{
     color:#809aa9;
 }
 h4{
-    font-family: tahoma, sans-serif;
-    font-size:12px;
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size:13px;
     color:#6D6E71;
+    margin-bottom:10px;
 }
 hr {
 	background-color: #ccc;
@@ -621,7 +622,49 @@ body{
     background:#ffffff;
     padding:6px;
 }
-
+#callouts .callout h4{
+    margin:10px 15px 12px;
+}
+#callouts .callout p{
+    margin:0 15px;
+}
+#callouts .callout .actionButton{
+    text-align: center;
+    position: relative;
+}
+#callouts .callout .actionButton a.ribbon:before{
+    content: ' ';  
+    position: absolute;
+    left: 36px;  
+    top: 0;  
+    border-width: 14px 7px;  
+    border-style: solid;  
+    border-color: #e86e6f #e86e6f #e86e6f #ffffff;
+}
+#callouts .callout .actionButton a{
+    background-color:#e86e6f;
+    height:23px;
+    margin:0 50px 15px;
+    display: block;
+    padding-top:5px;
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size:13px;
+    color:#ffffff;
+    text-decoration:none;
+    overflow: hidden;
+}
+#callouts .callout .actionButton:hover{
+    top:1px;
+}
+#callouts .callout .actionButton a.ribbon:after{
+    content: ' ';  
+    position: absolute;
+    right: 36px;  
+    top: 0;  
+    border-width: 14px 7px;  
+    border-style: solid;  
+    border-color: #e86e6f #ffffff #e86e6f #e86e6f;
+}
 /*------------------------------------------------------------ 
 		#hero
 ------------------------------------------------------------*/
