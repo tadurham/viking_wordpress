@@ -589,14 +589,17 @@ body{
     background: url(images/iconMachine.png) left center no-repeat;
 }
 #menu-utility-navigation li.findAStoreBannerButton{
-    margin:-16px 0 0 7px;
+    margin:-26px 0 0 7px;
 }
 #menu-utility-navigation li.findAStoreBannerButton a{
     display:block;
     text-indent:-5124px;
     width:132px;
-    height:59px;
-    background: url(images/findAStoreBanner.png) center top no-repeat;
+    height:70px;
+    background: url(images/findAStoreBanner.png) center bottom no-repeat;
+}
+#menu-utility-navigation li.findAStoreBannerButton:hover{
+    margin-top:-20px;
 }
 
 /*------------------------------------------------------------ 
