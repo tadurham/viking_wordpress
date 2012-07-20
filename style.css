@@ -596,6 +596,22 @@ body{
 }
 
 /*------------------------------------------------------------ 
+		#shareBubble
+------------------------------------------------------------*/
+#shareBubble{
+    width:41px;
+    height:37px;
+    top:77px;
+    right:44px;
+    text-indent:-5124px;
+    position: absolute;
+    background: url(images/shareButton.png) left center no-repeat;
+}
+#shareBubble:hover{
+    top:76px;
+}
+
+/*------------------------------------------------------------ 
 		.callouts
 ------------------------------------------------------------*/
 #callouts{

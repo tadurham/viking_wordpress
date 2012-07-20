@@ -14,7 +14,7 @@
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                
+
                     <div class="contentContainer">
                         <div id="hero">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/hero_1.jpg" alt="" />

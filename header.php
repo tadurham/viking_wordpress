@@ -47,6 +47,7 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
         <a id="mainLogoRibbon" href="<?php bloginfo('url'); ?>/">Husqvarna Viking Sewing Gallery</a>
+		<a id="shareBubble" href="#link">Share</a>
 		<nav role="navigation" class="site-navigation main-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>
