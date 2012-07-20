@@ -70,6 +70,7 @@ function viking_setup() {
 	register_nav_menus( 
         array(
             'primary' => 'Primary Menu',
+            'utility' => 'Utility Menu'
         )
 	);
 

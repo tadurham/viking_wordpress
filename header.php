@@ -51,6 +51,9 @@
 		<nav role="navigation" class="site-navigation main-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>
+		<nav role="navigation" class="site-navigation utility-navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
+		</nav>
 		<div class="clearFix"></div>
 	</header><!-- #masthead -->
 

@@ -382,36 +382,6 @@ header#masthead{
 		left: 0;
 	z-index: 99999;
 }
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
-.main-navigation ul ul a {
-	width: 200px;
-}
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-}
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
-}
-.main-navigation ul li:hover > ul {
-	display: block;
-}
-.main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
-}
-
-/* Small menu */
-.menu-toggle {
-	cursor: pointer;
-}
-.main-small-navigation .menu {
-	display: none;
-}
-
 
 /*------------------------------------------------------------ 
 		content
@@ -593,6 +563,40 @@ body{
 }
 .center{
     text-align:center;
+}
+
+/*------------------------------------------------------------ 
+		#menu-utility-navigation
+------------------------------------------------------------*/
+#menu-utility-navigation{
+    position: absolute;
+    right:0;
+    top:16px;
+}
+#menu-utility-navigation a{
+    color:#809AA9;
+    text-decoration:none;
+}
+#menu-utility-navigation li{
+    float:left;
+    display: block;
+    margin:0 7px;
+}
+/*---- special overrides ----*/
+#menu-utility-navigation li.iconMachine a{
+    color:#9E1F63;
+    padding-left:25px;
+    background: url(images/iconMachine.png) left center no-repeat;
+}
+#menu-utility-navigation li.findAStoreBannerButton{
+    margin:-16px 0 0 7px;
+}
+#menu-utility-navigation li.findAStoreBannerButton a{
+    display:block;
+    text-indent:-5124px;
+    width:132px;
+    height:59px;
+    background: url(images/findAStoreBanner.png) center top no-repeat;
 }
 
 /*------------------------------------------------------------ 
