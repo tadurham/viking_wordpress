@@ -20,7 +20,12 @@
     		</div>
     		<div class="details">
         		<div class="validDate"><?php echo get_post_meta($post->ID, 'wpcf-valid', true); ?></div>
-        		<div class="couponType"><?php echo get_post_meta($post->ID, 'wpcf-coupon-type', true); ?></div>
+        		<?php $couponType=get_post_meta($post->ID, 'wpcf-coupon-type', true);
+            		  if($couponType==1):?>
+                    <a class="couponRibbon" target="_blank" href="<?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbonDownloadCoupon.png" alt="Download Coupon"/></a>
+        		<?php elseif($couponType==2):?>
+                    <a class="couponRibbon" target="_blank" href="<?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbonRedeemInStore.png" alt="Redeem In-Store"/></a>
+        		<?php endif; ?>
         		<!-- <div class="couponUrl"><?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?></div> -->
     		</div>
             <div class="clearFix"></div>

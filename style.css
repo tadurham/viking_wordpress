@@ -808,6 +808,9 @@ select.distance{
 /*------------------------------------------------------------ 
 		.promos
 ------------------------------------------------------------*/
+.promos{
+    position: relative;
+}
 .promos .thumbnail{
     float:left;
     margin-right:30px;
@@ -817,12 +820,16 @@ select.distance{
     width:375px;
     margin-right:30px;
 }
-.promos .copy .title{
+.promos .copy .title,
+.promos .details .validDate{
     font-size:15px;
     font-family:tahoma, sans-serif;
     font-weight:normal;
     color:#809AA9;
     margin-bottom:10px;
+}
+.promos .details .validDate{
+    color:#6D6E71;
 }
 .promos .copy .description{
     font-size:11px;
@@ -831,8 +838,14 @@ select.distance{
 .promos .details{
     float:right;
     text-align:right;
-    width:150px;
+    width:240px;
 }
+.promos .couponRibbon{
+    position: absolute;
+    right:30px;
+    bottom:30px;
+}
+
 
 /*------------------------------------------------------------ 
 		#footer
