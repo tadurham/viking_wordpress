@@ -32,7 +32,7 @@
                                 <div class="image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/callout_findAClass.jpg" alt="" />
                                 </div>
-                                <h4>Learn about our Loyalty Program</h4>
+                                <h4>See your local class schedule</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
                                 <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
@@ -43,7 +43,7 @@
                                 <div class="image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/callout_specialsAndPromotions.jpg" alt="" />
                                 </div>
-                                <h4>Smaller Title Text</h4>
+                                <h4>Our latest specials and promotions</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
                                 <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
@@ -54,7 +54,7 @@
                                 <div class="image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/callout_sewSavvySavings.jpg" alt="" />
                                 </div>
-                                <h4>Smaller Title Text</h4>
+                                <h4>Learn about our Loyalty Program</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
                                 <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>
@@ -65,7 +65,7 @@
                                 <div class="image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/callout_products.jpg" alt="" />
                                 </div>
-                                <h4>Smaller Title Text</h4>
+                                <h4>See what our stores offer</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien</p>
                                 <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
                             </div>

@@ -8,13 +8,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
-
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'viking' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'viking' ), '<span class="edit-link">', '</span>' ); ?>
+        <h3><?php the_title(); ?></h3>
+        <div class="coreContent">
+            <div class="copy">
+        		<?php the_content(); ?>
+            </div>
+        </div>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
