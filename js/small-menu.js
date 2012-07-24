@@ -1,5 +1,6 @@
 /**
  * Handles toggling the main navigation menu for small screens.
+ * called from functions.php currently unused for this template.
  */
 jQuery( document ).ready( function( $ ) {
 	var $masthead = $( '#masthead' ),
