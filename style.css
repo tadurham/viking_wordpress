@@ -777,6 +777,80 @@ header .shareBubble:hover{
 }
 
 /*------------------------------------------------------------ 
+		.locations
+------------------------------------------------------------*/
+.locations .locationsCol{
+    float:left;
+}
+.locations .col1{
+    width:215px;
+}
+.locations .col2{
+    width:230px;
+}
+.locations .col3{
+    width:250px;
+    text-align:center;
+}
+.locations .col4{
+    float:right;
+    width:200px;
+    height:200px;
+    margin: -19px 0 0 0;
+    padding: 0;
+}
+.locations .col1,
+.locations .col1 a,
+.locations .col1 p{
+    font-family:tahoma, sans-serif;
+    font-weight:normal;
+    font-size: 12px;
+    color:#6d6e71;
+    text-decoration:none;
+}
+.locations .col1 a:hover{
+    text-decoration: underline;
+}
+.locations .storeDescription,
+.locations .storeDescription p,
+.locations .storeDescription a{
+    font-size:11px;
+    color:#939598;
+}
+.locations .storeDescription a:hover{
+    text-decoration: none;
+}
+.locations .storeNumber,
+.locations .storeNumber p{
+    font-size:13px;
+    color:#809aa9;
+    text-transform: uppercase;
+}
+.locations .coreContent{
+    padding-right:6px;
+    padding-bottom:6px;
+}
+.locations .col3 a.storePage{
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+    font-size:13px;
+    color:#e86e6f;
+    text-decoration:none;
+}
+.locations .col3 a.getDirections{
+    display: block;
+    background: url(images/bannerGetDirections.png) center center no-repeat;
+    width:171px;
+    height:27px;
+    margin:100px auto 0;
+    text-indent:-5124px;
+}
+.locations .col3 a.getDirections:hover{
+    margin-top:99px;
+}
+
+
+/*------------------------------------------------------------ 
 		#findAStore
 ------------------------------------------------------------*/
 #findAStore{
@@ -870,6 +944,9 @@ select.distance{
     position: absolute;
     right:30px;
     bottom:30px;
+}
+.promos .couponRibbon:hover{
+    bottom:31px;
 }
 
 
