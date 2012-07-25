@@ -333,7 +333,7 @@ a:active {
 ------------------------------------------------------------*/
 header#masthead{
     position: relative;
-    height: 137px;
+    /* height: 137px; */
 }
 #mainLogoRibbon{
     position: absolute;
@@ -651,6 +651,32 @@ header .shareBubble:hover{
     background: url(images/iconTwitter.png) left top no-repeat;    
     width:27px;
     height:25px;
+}
+
+/*------------------------------------------------------------ 
+		.breadcrumbs
+------------------------------------------------------------*/
+.breadcrumbs{
+    padding-left:287px;
+    height:23px;
+    background:#f7f8f8;
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size:10px;
+    font-weight:bold;
+    text-transform: uppercase;
+    color:#BCBEC0;
+    padding-top:6px;
+}
+.noBreadcrumbs{
+    height:8px;
+}
+.breadcrumbs a{
+    text-decoration:none;
+    font-weight:normal;
+    color:#BCBEC0;
+}
+.breadcrumbs a:hover{
+    text-decoration:underline;
 }
 
 

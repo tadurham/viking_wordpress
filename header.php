@@ -55,6 +55,16 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
 		</nav>
 		<div class="clearFix"></div>
+	    <?php 
+	    if((function_exists('bcn_display'))&&(!is_front_page())):
+            echo '<div class="breadcrumbs">';
+            bcn_display();
+            echo '</div>';
+	    else:
+            echo '<div class="noBreadcrumbs">';
+            echo '</div>';
+	    endif;           
+        ?>
 	</header><!-- #masthead -->
 
 	<div id="main">
