@@ -17,9 +17,24 @@
                     <p><?php echo(types_render_field('address')); ?></p>
                 </div>
                 <?php endif;?>
-                <?php if(types_render_field('store-contact')!=''):?>
+                <?php if((types_render_field('store-phone')!='')&&(types_render_field('store-fax')!='')&&(types_render_field('store-email')!='')):?>
                 <div class="storeContact">
-                    <?php echo(types_render_field('store-contact')); ?>
+                    <p>
+                    <?php 
+                    if(types_render_field('store-phone')!=''){
+                        echo(types_render_field('store-phone'));
+                        echo('<br/>');
+                    }                        
+                    if(types_render_field('store-fax')!=''){
+                        echo(types_render_field('store-fax')); 
+                        echo('<br/>');
+                    }                        
+                    if(types_render_field('store-email')!=''){
+                        echo(types_render_field('store-email')); 
+                        echo('<br/>');
+                    }                        
+                    ?>
+                    </p>
                 </div>
                 <?php endif; ?>
                 <?php if(types_render_field('store-hours')!=''):?>
