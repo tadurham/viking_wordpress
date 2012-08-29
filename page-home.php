@@ -17,7 +17,11 @@
 
                     <div class="contentContainer">
                         <div id="hero">
-                            <?php the_content(); ?>
+                            <?php 
+                                if(have_posts()) : while(have_posts()): the_post();
+                                    the_content(); 
+                                endwhile; endif;
+                            ?>
                         </div>
                         <?php get_sidebar('right-sidebar'); ?>
                         <div class="clearFix"></div>
