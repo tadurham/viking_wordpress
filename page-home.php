@@ -17,7 +17,7 @@
 
                     <div class="contentContainer">
                         <div id="hero">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/hero_1.jpg" alt="" />
+                            <?php the_content(); ?>
                         </div>
                         <?php get_sidebar('right-sidebar'); ?>
                         <div class="clearFix"></div>

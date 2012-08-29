@@ -30,6 +30,23 @@
     </div>
 </footer>
 
+<?php if(is_front_page()): ?>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery('#hero').cycle({
+		pause: true,
+		timeout: 4500,
+		speed: 1500,
+		cleartype: true,
+    });
+		//pager: '.slidenav',
+		//prev: '#slidePrev',
+		//next: '#slideNext'
+});
+</script>
+<?php endif; ?>
+
 <?php wp_footer(); ?>
 
 </div> <!-- !#gradient -->
