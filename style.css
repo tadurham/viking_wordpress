@@ -905,6 +905,70 @@ select.distance{
     text-align:center;
     margin-top:10px;
 }
+
+/*------------------------------------------------------------ 
+		About Us Page
+------------------------------------------------------------*/
+.about-us article .image img{
+    float:left;
+}
+.about-us article .copy{
+    margin-left:230px;
+}
+.about-us article h3{
+    clear:none;
+}
+.about-us article .copy h3{
+    margin-left:0;
+}
+.about-us .hyperlink{
+    text-align:right;
+}
+.about-us .hyperlink a{
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+    font-size:13px;
+    color:#e86e6f;
+    text-decoration:none;
+}
+.about-us .coreContent{
+    border-bottom:2px #99c6c7 dashed;
+}
+.about-us .coreContent:last-child{
+    border-bottom:none;
+}
+.about-us article{
+    width:722px;
+}
+
+/*------------------------------------------------------------ 
+		#sidebar
+------------------------------------------------------------*/
+#sidebar{
+    float:right;
+    width:233px;
+    margin-left:6px;
+}
+
+/*------------------------------------------------------------ 
+		#sidebar .callout
+------------------------------------------------------------*/
+#sidebar .callout{
+    background:#F7F8F8;
+}
+#sidebar .callout h3{
+    padding:10px 18px;
+    text-align:center;
+    text-transform: uppercase;
+}
+#sidebar .callout .copy{
+    margin-left:7px;
+}
+#sidebar .calloutButton{
+    text-align:center;
+    padding:12px 0;
+}
+
 /*------------------------------------------------------------ 
 		.promos
 ------------------------------------------------------------*/

@@ -22,12 +22,12 @@
                     <p>
                     <?php 
                     if(types_render_field('store-phone')!=''){
-                        echo '<label>Phone:</label> ';
+                        echo 'Phone: ';
                         echo(types_render_field('store-phone'));
                         echo('<br/>');
                     }                        
                     if(types_render_field('store-fax')!=''){
-                        echo '<label>Fax:</label> ';
+                        echo 'Fax: ';
                         echo(types_render_field('store-fax')); 
                         echo('<br/>');
                     }                        
