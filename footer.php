@@ -24,7 +24,7 @@
                 <a href="#link" class="twitter">Twitter</a>
     		</div>
     		<div id="legal">
-        		<p class="legal">&copy; 2012 KSIN Luxembourg II, S.ar.l. VIKING and SEW SAVVY SAVINGS are trademarks of KSIN Luxembourg II, S.ar.l. HUSQVARNA and the 'crowned-H device' are trademarks of Husqvarna AB. All trademarks used under license by VSM Group AB.</p>
+        		<p class="legal">&copy; 2012 KSIN Luxembourg II, S.ar.l. VIKING and SEW SAVVY SAVINGS are trademarks of KSIN Luxembourg II, S.ar.l. HUSQVARNA and the 'crowned-H device' are trademarks of Husqvarna AB.<br /> All trademarks used under license by VSM Group AB.</p>
     		<div class="clearFix"></div>
         </div>
     </div>
