@@ -342,6 +342,7 @@ header#masthead{
     height:153px;
     text-indent:-5124px;
     display:block;
+    z-index:1000;
 }
 
 /*------------------------------------------------------------ 
@@ -558,7 +559,7 @@ body{
     margin:8px 0;
 }
 .contentContainer{
-    padding:6px 6px 0;
+    padding:6px 6px 6px;
     background-color:#f7f8f8;
 }
 .center{
