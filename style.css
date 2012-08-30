@@ -2,7 +2,7 @@
 Theme Name: Viking
 Author: Sullivan Branding Interactive
 Author URI: http://sullivanbranding.com/
-Description: 
+Description:
 Version: 1.0
 
 /*------------------------------------------------------------ 
@@ -858,10 +858,25 @@ header .shareBubble:hover{
     float:right;
     background:#ffffff;
 }
+.about-us #findAStore{
+    float:none;
+}
 .home #findAStore{
     padding-top:30px;
     width:230px;
     height:305px;
+}
+.about-us #findAStore{
+    padding:6px;
+    width:221px;
+    height:100%;
+    background:#f7f8f8;
+    margin-bottom: 6px;
+}
+.findAStoreContainer{
+    background:#ffffff;
+    height:295px;
+    padding-top:16px;
 }
 #findAStore form{
     width:160px;
@@ -956,6 +971,7 @@ select.distance{
 ------------------------------------------------------------*/
 #sidebar .callout{
     background:#F7F8F8;
+    margin-bottom:6px;
 }
 #sidebar .callout h3{
     padding:10px 18px;
