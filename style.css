@@ -990,7 +990,8 @@ select.distance{
 		Sew Savvy Savings Page
 ------------------------------------------------------------*/
 .sew-savvy-savings .entry-content{
-    width:721px;
+    width:709px;
+    margin-top:0;
 }
 .sew-savvy-savings .coreContent{
     padding:40px;
@@ -1000,6 +1001,7 @@ select.distance{
     padding:0;
     font-size:25px;
     color:#9f1f63;
+    text-transform: none;
 }
 .sew-savvy-savings p{
     color:#6d6e71;
@@ -1011,8 +1013,26 @@ select.distance{
 .sew-savvy-savings .copy .alignright{
     width:315px;
 }
-.sew-savvy-savings .copy h3.icon{
-    
+.sew-savvy-savings .heroImage{
+    width:733px;
+}
+.sew-savvy-savings .headlineMembershipBenefits{
+    position: relative;
+    left:-57px;
+    max-width:none;
+}
+.sew-savvy-savings .crossStitch{
+    width: 721px;
+    margin:12px 0;
+}
+
+/*------------------------------------------------------------ 
+		#subHero
+------------------------------------------------------------*/
+#subHero{
+    background:#f7f8f8;
+    padding:6px;
+    width:709px;
 }
 
 /*------------------------------------------------------------ 
