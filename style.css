@@ -712,6 +712,7 @@ header .shareBubble:hover{
     margin:10px 10px 12px;
 }
 #callouts .callout p{
+    height: 100px;
     margin:0 10px;
 }
 #callouts .callout .actionButton{
