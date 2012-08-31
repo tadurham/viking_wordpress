@@ -66,15 +66,15 @@
                                 </div>
                                 <?php endif; ?>
                             </div>
+                            <div class="storeMap">
+                                <?php 
+                                    $lat=types_render_field('store-latitude');
+                                    $long=types_render_field('store-longitude');
+                                ?>
+                                <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=340x340&maptype=terrain&zoom=13&sensor=false" alt="" />
+                            </div>
+                            <div class="clearFix"></div>
                         </div>
-                        <div class="storeMap">
-                            <?php 
-                                $lat=types_render_field('store-latitude');
-                                $long=types_render_field('store-longitude');
-                            ?>
-                            <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=340x340&maptype=terrain&zoom=13&sensor=false" alt="" />
-                        </div>
-                        <div class="clearFix"></div>
                 	</div><!-- .entry-content -->
                 </article>
 
