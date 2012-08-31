@@ -1041,13 +1041,13 @@ select.distance{
     margin-top:-17px;
 }
 .sew-savvy-savings .icon{
-    margin-left:125px;
+    padding-left:95px;
 }
 .sew-savvy-savings .icon.specialPerks{
     background: url(images/icon_specialPerks.png) left top no-repeat;
 }
 .sew-savvy-savings .icon.freebiesGalore{
-    background: url(images/icon_freebiesGalore.png) left top no-repeat;
+    background: url(images/icon_specialsGalore.png) left top no-repeat;
 }
 .sew-savvy-savings .icon.birthdayPoints{
     background: url(images/icon_birthdayPoints.png) left top no-repeat;
