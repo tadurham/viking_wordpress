@@ -16,6 +16,7 @@ get_header(); ?>
 <?php the_post_thumbnail(); ?>
         </a>
     </div>
+    <div class="crossStitch"></div>
 <?php endif; ?>
 		<div id="primary" class="site-content about-us">
 			<div id="content" role="main">
