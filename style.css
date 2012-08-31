@@ -838,6 +838,7 @@ header .shareBubble:hover{
     font-size:13px;
     color:#e86e6f;
     text-decoration:none;
+    text-transform: uppercase;
 }
 .locations .col3 a.getDirections{
     display: block;
@@ -851,6 +852,15 @@ header .shareBubble:hover{
     margin-top:99px;
 }
 
+.storeCol {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 290px;
+}
+
+.storeMap {
+    float: left;
+}
 
 /*------------------------------------------------------------ 
 		#findAStore
