@@ -13,7 +13,7 @@
                     <div class="center">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/findAStore.png" alt="Find A Store" />
                     </div>
-                    <form method="get">
+                    <form action="/our-locations/" method="get">
                         <label for="City">City</label>
                         <input type="text" name="City"/>
                         <span class="or">or</span>
