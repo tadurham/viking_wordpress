@@ -1034,6 +1034,12 @@ select.distance{
 .sew-savvy-savings #sidebar{
     width:223px;
 }
+.page-template-page-sewsavvysavings-php .breadcrumbs{
+    width:434px;
+}
+.page-template-page-sewsavvysavings-php #sidebar{
+    margin-top:-17px;
+}
 
 /*------------------------------------------------------------ 
 		.checkMyPoints
@@ -1055,10 +1061,12 @@ select.distance{
 }
 .checkMyPoints input{
     border: solid 1px #c0cdd4;
+    border-radius:0;
+    width:162px;
 }
 .orGreen{
     display: block;
-    background: url(images/orFlagGreen.png) center top no-repeat;
+    background: url(images/orFlagGreen.png) center center no-repeat;
     width:100%;
     height:22px;
     text-indent:-5124px;
@@ -1068,12 +1076,15 @@ select.distance{
 .checkMyPoints .submit input{
     display:block;
     text-indent:-5124px;
-    background: url(images/sss_login.png) center center no-repeat;
+    background: url(images/sss_login.png) center top no-repeat;
     width:213px;
-    height:32px;
+    height:42px;
     border:none;
     outline:none;
     text-align:center;
+}
+.checkMyPoints .submit{
+    padding:15px 0;
 }
 
 
