@@ -21,49 +21,51 @@
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 	<div class="entry-content">
                         <h3><?php the_title(); ?></h3>
-                        <div class="storeCol">
-                            <?php if(types_render_field('store-number')!=''):?>
-                            <div class="storeNumber">
-                                <p>Store #:<?php echo(types_render_field('store-number')); ?></p>
+                        <div class="coreContent">
+                            <div class="storeCol">
+                                <?php if(types_render_field('store-number')!=''):?>
+                                <div class="storeNumber">
+                                    <p>Store #:<?php echo(types_render_field('store-number')); ?></p>
+                                </div>
+                                <?php endif; ?>
+                                <?php if(types_render_field('address')!=''):?>
+                                <div class="address">
+                                    <p><?php echo(types_render_field('address')); ?></p>
+                                </div>
+                                <?php endif;?>
+                                <?php if((types_render_field('store-phone')!='')&&(types_render_field('store-fax')!='')&&(types_render_field('store-email')!='')):?>
+                                <div class="storeContact">
+                                    <p>
+                                    <?php 
+                                    if(types_render_field('store-phone')!=''){
+                                        echo 'Phone: ';
+                                        echo(types_render_field('store-phone'));
+                                        echo('<br/>');
+                                    }                        
+                                    if(types_render_field('store-fax')!=''){
+                                        echo 'Fax: ';
+                                        echo(types_render_field('store-fax')); 
+                                        echo('<br/>');
+                                    }                        
+                                    if(types_render_field('store-email')!=''){
+                                        echo(types_render_field('store-email')); 
+                                        echo('<br/>');
+                                    }                        
+                                    ?>
+                                    </p>
+                                </div>
+                                <?php endif; ?>
+                                <?php if(types_render_field('store-hours')!=''):?>
+                                <div class="storeHours">
+                                    <p><?php echo(types_render_field('store-hours')); ?></p>
+                                </div>
+                                <?php endif; ?>
+                                <?php if(types_render_field('store-description')!=''):?>
+                                <div class="storeDescription">
+                                    <p><?php echo(types_render_field('store-description')); ?></p>
+                                </div>
+                                <?php endif; ?>
                             </div>
-                            <?php endif; ?>
-                            <?php if(types_render_field('address')!=''):?>
-                            <div class="address">
-                                <p><?php echo(types_render_field('address')); ?></p>
-                            </div>
-                            <?php endif;?>
-                            <?php if((types_render_field('store-phone')!='')&&(types_render_field('store-fax')!='')&&(types_render_field('store-email')!='')):?>
-                            <div class="storeContact">
-                                <p>
-                                <?php 
-                                if(types_render_field('store-phone')!=''){
-                                    echo 'Phone: ';
-                                    echo(types_render_field('store-phone'));
-                                    echo('<br/>');
-                                }                        
-                                if(types_render_field('store-fax')!=''){
-                                    echo 'Fax: ';
-                                    echo(types_render_field('store-fax')); 
-                                    echo('<br/>');
-                                }                        
-                                if(types_render_field('store-email')!=''){
-                                    echo(types_render_field('store-email')); 
-                                    echo('<br/>');
-                                }                        
-                                ?>
-                                </p>
-                            </div>
-                            <?php endif; ?>
-                            <?php if(types_render_field('store-hours')!=''):?>
-                            <div class="storeHours">
-                                <p><?php echo(types_render_field('store-hours')); ?></p>
-                            </div>
-                            <?php endif; ?>
-                            <?php if(types_render_field('store-description')!=''):?>
-                            <div class="storeDescription">
-                                <p><?php echo(types_render_field('store-description')); ?></p>
-                            </div>
-                            <?php endif; ?>
                         </div>
                         <div class="storeMap">
                             <?php 
@@ -72,6 +74,7 @@
                             ?>
                             <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=340x340&maptype=terrain&zoom=13&sensor=false" alt="" />
                         </div>
+                        <div class="clearFix"></div>
                 	</div><!-- .entry-content -->
                 </article>
 
