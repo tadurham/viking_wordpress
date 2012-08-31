@@ -12,7 +12,7 @@
 <?php get_header(); ?>
     <div class="locations-header-wrap">
         <a href="#">
-<?php the_post_thumbnail(); ?>
+<img src="<?php echo get_template_directory_uri(); ?>/images/header-ourLocations.jpg" alt="" />
         </a>
     </div>
         <div class="crossStitch"></div>
