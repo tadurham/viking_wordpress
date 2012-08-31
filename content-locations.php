@@ -53,13 +53,13 @@
                 <?php endif; ?>
                 <?php if(types_render_field('store-number')!=''):?>
                 <div class="storeNumber">
-                    <p><?php echo(types_render_field('store-number')); ?></p>
+                    <p>Store #:<?php echo(types_render_field('store-number')); ?></p>
                 </div>
                 <?php endif; ?>
             </div>
             <div class="col3 locationsCol">
                 <div class="">
-                    <a class="storePage" href="#">Visit Store Page ></a>
+                    <a class="storePage" href="<?php echo the_permalink(); ?>">Visit Store Page ></a>
                 </div>
                 <div class="">
                     <a class="getDirections" href="#">Get Directions</a>
