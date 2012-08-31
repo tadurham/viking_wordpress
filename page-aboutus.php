@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<?php if(has_post_thumbnail(): the_post_thumbnail(); endif; ?>
+<?php if(has_post_thumbnail()): the_post_thumbnail(); endif; ?>
 		<div id="primary" class="site-content about-us">
 			<div id="content" role="main">
                 <div id="sidebar">
