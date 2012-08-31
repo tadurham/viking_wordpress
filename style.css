@@ -987,6 +987,35 @@ select.distance{
 }
 
 /*------------------------------------------------------------ 
+		Sew Savvy Savings Page
+------------------------------------------------------------*/
+.sew-savvy-savings .entry-content{
+    width:721px;
+}
+.sew-savvy-savings .coreContent{
+    padding:40px;
+}
+.sew-savvy-savings .coreContent h3{
+    margin:0;
+    padding:0;
+    font-size:25px;
+    color:#9f1f63;
+}
+.sew-savvy-savings p{
+    color:#6d6e71;
+    font-size:15px;
+}
+.sew-savvy-savings .copy .alignleft{
+    width:285px;
+}
+.sew-savvy-savings .copy .alignright{
+    width:315px;
+}
+.sew-savvy-savings .copy h3.icon{
+    
+}
+
+/*------------------------------------------------------------ 
 		.promos
 ------------------------------------------------------------*/
 .promos{
