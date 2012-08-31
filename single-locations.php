@@ -18,40 +18,42 @@
         <div class="crossStitch"></div>
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
-                <div class="storeCol">
-                    <?php if(types_render_field('address')!=''):?>
-                    <div class="address">
-                        <p><?php echo(types_render_field('address')); ?></p>
-                    </div>
-                    <?php endif;?>
-                    <?php if((types_render_field('store-phone')!='')&&(types_render_field('store-fax')!='')&&(types_render_field('store-email')!='')):?>
-                    <div class="storeContact">
-                        <p>
-                        <?php 
-                        if(types_render_field('store-phone')!=''){
-                            echo 'Phone: ';
-                            echo(types_render_field('store-phone'));
-                            echo('<br/>');
-                        }                        
-                        if(types_render_field('store-fax')!=''){
-                            echo 'Fax: ';
-                            echo(types_render_field('store-fax')); 
-                            echo('<br/>');
-                        }                        
-                        if(types_render_field('store-email')!=''){
-                            echo(types_render_field('store-email')); 
-                            echo('<br/>');
-                        }                        
-                        ?>
-                        </p>
-                    </div>
-                    <?php endif; ?>
-                    <?php if(types_render_field('store-hours')!=''):?>
-                    <div class="storeHours">
-                        <p><?php echo(types_render_field('store-hours')); ?></p>
-                    </div>
-                    <?php endif; ?>
-                </div>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                	<div class="entry-content">
+                        <div class="storeCol">
+                            <?php if(types_render_field('address')!=''):?>
+                            <div class="address">
+                                <p><?php echo(types_render_field('address')); ?></p>
+                            </div>
+                            <?php endif;?>
+                            <?php if((types_render_field('store-phone')!='')&&(types_render_field('store-fax')!='')&&(types_render_field('store-email')!='')):?>
+                            <div class="storeContact">
+                                <p>
+                                <?php 
+                                if(types_render_field('store-phone')!=''){
+                                    echo 'Phone: ';
+                                    echo(types_render_field('store-phone'));
+                                    echo('<br/>');
+                                }                        
+                                if(types_render_field('store-fax')!=''){
+                                    echo 'Fax: ';
+                                    echo(types_render_field('store-fax')); 
+                                    echo('<br/>');
+                                }                        
+                                if(types_render_field('store-email')!=''){
+                                    echo(types_render_field('store-email')); 
+                                    echo('<br/>');
+                                }                        
+                                ?>
+                                </p>
+                            </div>
+                            <?php endif; ?>
+                            <?php if(types_render_field('store-hours')!=''):?>
+                            <div class="storeHours">
+                                <p><?php echo(types_render_field('store-hours')); ?></p>
+                            </div>
+                            <?php endif; ?>
+                        </div>
 
                     <div id="callouts">
                         <div class="callout">
@@ -101,6 +103,8 @@
                         <div class="clearFix"></div>
                     </div> <!-- !#callouts -->
 
+                	</div><!-- .entry-content -->
+                </article>
 			</div><!-- #content -->
                     
 		</div><!-- #primary .site-content -->
