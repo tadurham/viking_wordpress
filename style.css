@@ -926,6 +926,11 @@ select.distance{
 /*------------------------------------------------------------ 
 		About Us Page
 ------------------------------------------------------------*/
+.aboutus-header-wrap {
+    background:#f7f8f8;
+    padding: 4px;
+}
+
 .about-us article .image img{
     float:left;
 }
