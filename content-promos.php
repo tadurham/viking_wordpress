@@ -24,7 +24,7 @@
             		  if($couponType==1):?>
                     <a class="couponRibbon" target="_blank" href="<?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbonDownloadCoupon.png" alt="Download Coupon"/></a>
         		<?php elseif($couponType==2):?>
-                    <a class="couponRibbon" target="_blank" href="<?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbonRedeemInStore.png" alt="Redeem In-Store"/></a>
+                    <a class="couponRibbon" target="_blank" href="<?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbonFullDetails.png" alt="Full Details"/></a>
         		<?php endif; ?>
         		<!-- <div class="couponUrl"><?php echo get_post_meta($post->ID, 'wpcf-coupon', true); ?></div> -->
     		</div>
