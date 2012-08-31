@@ -1040,6 +1040,24 @@ select.distance{
 .page-template-page-sewsavvysavings-php #sidebar{
     margin-top:-17px;
 }
+.sew-savvy-savings .icon{
+    margin-left:125px;
+}
+.sew-savvy-savings .icon.specialPerks{
+    background: url(images/icon_specialPerks.png) left top no-repeat;
+}
+.sew-savvy-savings .icon.freebiesGalore{
+    background: url(images/icon_freebiesGalore.png) left top no-repeat;
+}
+.sew-savvy-savings .icon.birthdayPoints{
+    background: url(images/icon_birthdayPoints.png) left top no-repeat;
+}
+.sew-savvy-savings .icon.doubleDays{
+    background: url(images/icon_doubleDays.png) left top no-repeat;
+}
+.sew-savvy-savings .icon.eliteMembership{
+    background: url(images/icon_eliteMembership.png) left top no-repeat;
+}
 
 /*------------------------------------------------------------ 
 		.checkMyPoints
