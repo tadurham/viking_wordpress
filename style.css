@@ -1068,6 +1068,23 @@ select.distance{
 .sew-savvy-savings .icon.eliteMembership{
     background: url(images/icon_eliteMembership.png) left top no-repeat;
 }
+.sew-savvy-savings .highlight{
+    color:#a02064;
+}
+.sew-savvy-savings .slabSerif{
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+}
+.sew-savvy-savings ul{
+    list-style-position: inside;
+    margin-left:0;
+}
+.sew-savvy-savings li{
+    float:left;
+    padding-right:45px;
+    color:#a02064;
+    font-size:14px;
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+}
 
 /*------------------------------------------------------------ 
 		.checkMyPoints
