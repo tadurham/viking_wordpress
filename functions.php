@@ -137,3 +137,10 @@ add_action( 'wp_enqueue_scripts', 'viking_scripts' );
 
 /*---- Disable admin bar ----*/
 add_filter( 'show_admin_bar', '__return_false' );
+
+add_action( 'admin_menu', 'my_remove_menu_pages' );
+
+function my_remove_menu_pages() {
+    remove_menu_page('link-manager.php');
+    remove_menu_page('edit-comments.php');	
+}
