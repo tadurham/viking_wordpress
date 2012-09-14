@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Our Locations
+ * Template Name: Location - Single
  *
- * The template for Our Locations Page
+ * The template for individual store pages.
  *
  * @package Viking
  * @since Viking 1.0
