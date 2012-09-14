@@ -36,15 +36,19 @@
 
         $storesInRange = array();
 
-        /* Select queries return a resultset */
-        if ($result = $mysqli->multi_query($query)) {
-            while ($row = $result->fetch_assoc()) {
-                $storesInRange[] = $row['post_id'];
-            }
-
-            /* free result set */
-            $result->close();
+        if ($mysqli->multi_query($query)) {
+            do {
+                if ($result = $mysqli->store_result()) {
+                    while ($row = $result->fetch_row()) {
+                        $storesInRange[] = $row[0];
+                    }
+                    $result->free();
+                }
+            } while ($mysqli->next_result());
         }
+
+        /* close connection */
+        $mysqli->close();
 
         query_posts(array(
             'post_type' => 'locations',
