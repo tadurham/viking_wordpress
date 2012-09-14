@@ -1268,6 +1268,10 @@ select.distance{
     margin: 0 auto;
 }
 
+.product-info {
+    height: 124px;
+}
+
 .product-info h4 {
     color: #767777;
     text-align: center;
@@ -1279,5 +1283,8 @@ select.distance{
     display: block;
     height: 25px;
     float: left;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
     width: 100px;
 }
