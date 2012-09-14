@@ -23,12 +23,25 @@
                 'posts_per_page' => '250'
             ));
 
-            if(have_posts()) : ?>
+            if(have_posts()) : $count = 1; ?>
 
             <?php while ( have_posts() ) : the_post(); ?>
 
-                <?php get_template_part( 'content', 'products' ); ?>
+                <?php 
+                    $class = '';
 
+                    if($count == 1) $class = 'first-col';
+                    elseif($count == 2) $class = 'second-col';
+                    elseif($count == 3) $class = 'third-col';
+
+                    get_template_part( 'content', 'products' ); ?>
+
+                <?php 
+                      if($count == 3) 
+                        $count = 1; 
+                      else 
+                        $count++; 
+                ?>
             <?php endwhile; // end of the loop. ?>
         <?php else: ?>
             <p>No products found.</p>

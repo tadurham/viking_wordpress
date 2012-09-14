@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="product-wrap">
+<div class="product-wrap <?php echo $class; ?>">
     <div class="product-thumbnail">
         <?php the_post_thumbnail(); ?>
     </div>

@@ -1273,7 +1273,7 @@ select.distance{
 }
 
 .product-info p {
-    height: 72px;
+    height: 85px;
 }
 
 .product-info h4 {
@@ -1300,4 +1300,8 @@ select.distance{
 
 .product-info a.find-store-link {
     float: right;
+}
+
+.second-col {
+    margin: 0 12px;
 }
