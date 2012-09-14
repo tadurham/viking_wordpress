@@ -5,6 +5,8 @@
  * @package Viking
  * @since Viking 1.0
  */
+
+global $class;
 ?>
 
 <div class="product-wrap <?php echo $class; ?>">
