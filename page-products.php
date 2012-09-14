@@ -20,7 +20,8 @@
         <?php
             query_posts(array(
                 'post_type' => 'product',
-                'posts_per_page' => '250'
+                'posts_per_page' => '250',
+                'orderby' => 'menu_order'
             ));
 
             if(have_posts()) : $count = 1; ?>
