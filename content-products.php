@@ -7,11 +7,13 @@
  */
 ?>
 
-<div class="product-thumbnail">
-    <?php the_post_thumbnail(); ?>
-</div>
-<div class="product-info">
-    <h4><?php the_title(); ?></h4>
-    <?php the_content(); ?>
-    <p><?php echo(types_render_field('product-page-link')); ?></p>
+<div class="product-wrap">
+    <div class="product-thumbnail">
+        <?php the_post_thumbnail(); ?>
+    </div>
+    <div class="product-info">
+        <h4><?php the_title(); ?></h4>
+        <?php the_content(); ?>
+        <p><?php echo(types_render_field('product-page-link')); ?></p>
+    </div>
 </div>
