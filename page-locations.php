@@ -16,12 +16,13 @@
 
 <?php
     if(isset($_GET['City']) || $_GET['Zip'] != '') {
-        $storeSearch="http://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($_GET['find-a-store']) . "&sensor=false";
+        $findAStore = $_GET['City'].' '.$_GET['Zip'];
+        $storeSearch="http://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($findAStore) . "&sensor=false";
         $results= file_get_contents($storeSearch,true);
         $results= json_decode($results);
         $lat=$results->results[0]->geometry->location->lat;
         $lng=$results->results[0]->geometry->location->lng; 
-        $distance = $_GET['Distance'];
+        $distance = ($_GET['Distance'] == '' ? 30 : $_GET['Distance']);
 
         $query = "CREATE TEMPORARY TABLE stores SELECT post_id, meta_value AS latitude, '000.000000000000000000000' as longitude FROM `wp_postmeta` WHERE meta_key = 'wpcf-store-latitude';";
 
