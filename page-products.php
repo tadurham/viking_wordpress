@@ -19,7 +19,7 @@
                         <div class="coreContent">
         <?php
             query_posts(array(
-                'post_type' => 'products',
+                'post_type' => 'product',
                 'posts_per_page' => '250'
             ));
 
