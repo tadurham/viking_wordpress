@@ -1255,3 +1255,29 @@ select.distance{
     color: #db2033;
     font-weight: bold;
 }
+
+/*------------------------------------------------------------ 
+		Products Page
+------------------------------------------------------------*/
+.product-wrap {
+    float: left;
+    width: 225px;
+}
+
+.product-thumbnail img {
+    margin: 0 auto;
+}
+
+.product-info h4 {
+    color: #767777;
+    text-align: center;
+}
+
+.product-info a {
+    background-color: #a9b8c2;
+    color: #eaedf0;
+    display: block;
+    height: 25px;
+    float: left;
+    width: 100px;
+}
