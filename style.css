@@ -1269,12 +1269,13 @@ select.distance{
 }
 
 .product-info {
-    height: 168px;
+    height: 200px;
 }
 
 .product-info h4 {
     color: #767777;
     font-weight: bold;
+    height: 36px;
     text-align: center;
 }
 
@@ -1288,6 +1289,9 @@ select.distance{
     text-align: center;
     text-decoration: none;
     width: 100px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px;
 }
 
 .product-info a.find-store-link {
