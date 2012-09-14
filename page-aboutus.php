@@ -11,17 +11,10 @@
 get_header(); ?>
 
 <?php if(has_post_thumbnail()): ?>
-    <div class="aboutus-header-wrap">
-        <a href="/products/">
-<?php the_post_thumbnail(); ?>
-        </a>
-    </div>
-    <div class="crossStitch"></div>
 <?php endif; ?>
 		<div id="primary" class="site-content about-us">
 			<div id="content" role="main">
                 <div id="sidebar">
-                
                     <aside id="findAStore">
                         <div class="findAStoreContainer">
                             <div class="center">
@@ -74,6 +67,13 @@ get_header(); ?>
                 </div>
                 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div id="subHero">
+                        <a href="/products/">
+                            <?php the_post_thumbnail(); ?>
+                        </a>
+                    </div>
+                    <div class="crossStitch"></div>
+
                 	<div class="entry-content">
                         <h3><?php the_title(); ?></h3>
     			

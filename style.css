@@ -679,6 +679,9 @@ header .shareBubble:hover{
 .breadcrumbs a:hover{
     text-decoration:underline;
 }
+.breadcrumbs.shortWidth{
+    width:434px;
+}
 
 
 /*------------------------------------------------------------ 
@@ -940,9 +943,11 @@ select.distance{
     background:#f7f8f8;
     padding: 4px;
 }
-
 .about-us article .image img{
     float:left;
+}
+.about-us #sidebar{
+    margin-top:-20px;
 }
 .about-us article .copy{
     margin-left:230px;
@@ -972,6 +977,13 @@ select.distance{
 .about-us article{
     width:722px;
 }
+.aboutus-header-wrap{
+    width:709px;
+}
+.page-template-page-aboutus-php .breadcrumbs{
+    width:434px;
+}
+
 
 /*------------------------------------------------------------ 
 		#sidebar
