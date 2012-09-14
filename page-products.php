@@ -21,7 +21,8 @@
             query_posts(array(
                 'post_type' => 'product',
                 'posts_per_page' => '250',
-                'orderby' => 'menu_order'
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
             ));
 
             if(have_posts()) : $count = 1; ?>
