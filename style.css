@@ -1264,12 +1264,16 @@ select.distance{
     width: 225px;
 }
 
+.product-thumbnail {
+    height: 111px;
+}
+
 .product-thumbnail img {
     margin: 0 auto;
 }
 
-.product-info {
-    height: 200px;
+.product-info p {
+    height: 72px;
 }
 
 .product-info h4 {
