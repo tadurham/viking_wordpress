@@ -14,6 +14,9 @@
     <div class="product-info">
         <h4><?php the_title(); ?></h4>
         <?php the_content(); ?>
-        <p><a href="<?php echo get_post_meta($post->ID, 'wpcf-product-page-link', true); ?>" target="_blank" class="learn-more-link">Learn More</a></p>
+        <p>
+            <a href="<?php echo get_post_meta($post->ID, 'wpcf-product-page-link', true); ?>" target="_blank" class="learn-more-link">Learn More</a>
+            <a href="/our-locations/" class="find-store-link">Find in Store</a>
+        </p>
     </div>
 </div>
