@@ -52,12 +52,14 @@
 
         query_posts(array(
             'post_type' => 'locations',
+            'posts_per_page' => '25',
             'post__in' => $storesInRange
         ));
     }
     else {
         query_posts(array(
-            'post_type' => 'locations'
+            'post_type' => 'locations',
+            'posts_per_page' => '25'
         ));
     }
 ?>
