@@ -13,7 +13,7 @@
 			<div id="content" role="main">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 	<div class="entry-content">
-                        <h3><?php the_title(); ?></h3>
+                        <?php echo '<h3>'.single_cat_title( '', false).'</h3>'; ?>
                         <div class="coreContent">
 
         <?php if(have_posts()) : ?>
