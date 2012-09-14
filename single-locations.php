@@ -11,7 +11,7 @@
  
 <?php get_header(); ?>
     <div class="locations-header-wrap">
-        <a href="#">
+        <a href="/specials-and-promotions/">
 <img src="<?php echo get_template_directory_uri(); ?>/images/header-ourLocations.jpg" alt="" />
         </a>
     </div>
