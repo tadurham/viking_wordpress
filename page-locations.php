@@ -13,15 +13,58 @@
         <div class="crossStitch"></div>
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
-    			<?php query_posts(array(
-                    'post_type' => 'locations'
-                  ));
-                ?>
+
+<?php
+    if(isset($_GET['City']) || $_GET['Zip'] != '') {
+        $storeSearch="http://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($_GET['find-a-store']) . "&sensor=false";
+        $results= file_get_contents($storeSearch,true);
+        $results= json_decode($results);
+        $lat=$results->results[0]->geometry->location->lat;
+        $lng=$results->results[0]->geometry->location->lng; 
+        $distance = $_GET['Distance'];
+
+        $query = "CREATE TEMPORARY TABLE stores SELECT post_id, meta_value AS latitude, '000.000000000000000000000' as longitude FROM `wp_postmeta` WHERE meta_key = 'wpcf-store-latitude';";
+
+        $query .= "UPDATE stores, wp_postmeta SET stores.longitude = meta_value WHERE stores.post_id = `wp_postmeta`.post_id AND meta_key = 'wpcf-store-longitude';";
+
+        $query .= "SELECT * FROM stores WHERE GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance;
+
+        include('inc/dbconn.inc');
+
+        $mysqli = new mysqli($host, $username, $password, $database);
+
+        $storesInRange = array();
+
+        /* Select queries return a resultset */
+        if ($result = $mysqli->multi_query($query)) {
+            while ($row = $result->fetch_assoc()) {
+                $storesInRange[] = $row['post_id'];
+            }
+
+            /* free result set */
+            $result->close();
+        }
+
+        query_posts(array(
+            'post_type' => 'locations',
+            'post__in' => $storesInRange
+        ));
+    }
+    else {
+        query_posts(array(
+            'post_type' => 'locations'
+        ));
+    }
+?>
+            <?php if(have_posts()) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'content', 'locations' ); ?>
 
 				<?php endwhile; // end of the loop. ?>
+            <?php else: ?>
+                <p>No stores found in your area.</p>
+            <?php endif; ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
