@@ -8,7 +8,7 @@
 ?>
 
 <div class="product-thumbnail">
-    <?php post_thumbnail(); ?>
+    <?php the_post_thumbnail(); ?>
 </div>
 <div class="product-info">
     <h4><?php the_title(); ?></h4>
