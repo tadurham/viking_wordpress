@@ -18,7 +18,7 @@ get_header(); ?>
                     <aside id="findAStore">
                         <div class="findAStoreContainer">
                             <div class="center">
-                                <img src="http://viking.sullivanbranding.com/wp-content/themes/Viking/images/findAStore.png" alt="Find A Store">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/findAStore.png" alt="Find A Store">
                             </div>
                             <form method="get">
                                 <label for="City">City</label>

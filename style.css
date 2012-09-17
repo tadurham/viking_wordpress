@@ -936,6 +936,54 @@ select.distance{
     margin-top:10px;
 }
 
+/*---- Adjustments for locations page ----*/
+.page-template-page-locations-php #findAStore{
+    float:none;
+}
+.page-template-page-locations-php #findAStore img{
+    display: inline;
+    margin-left:15px;
+}
+.page-template-page-locations-php #findAStore form{
+    width:700px;
+    margin:0;
+    display: inline;
+    position: relative;
+    top:-40px;
+}
+.page-template-page-locations-php #findAStore form label{
+    display: inline;
+    padding-right:5px;
+    padding-left:15px;
+}
+.page-template-page-locations-php #findAStore form .distance{
+    float:none;
+    display:inline;
+}
+.page-template-page-locations-php #findAStore form .or{
+    display: inline;
+    background:none;
+}
+.page-template-page-locations-php .findAStoreContainer{
+    background:#ffffff;
+    height:115px;
+    padding-top:16px;
+}
+.page-template-page-locations-php input#findAStoreSubmit{
+    background:#939598;
+    width:70px;
+    height:30px;
+    border:none;
+    border-radius: 6px;
+    float:none;
+    margin-top:6px;
+    margin-left:10px;
+    color:#ffffff;
+    font-size:13px;
+    font-family:tahoma, sans-serif;
+}
+
+
 /*------------------------------------------------------------ 
 		About Us Page
 ------------------------------------------------------------*/

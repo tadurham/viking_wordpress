@@ -10,6 +10,31 @@
  ?>
  
 <?php get_header(); ?>
+        <aside id="findAStore">
+            <div class="findAStoreContainer">
+                <img src="<?php bloginfo('template_directory'); ?>/images/findAStore.png" alt="Find A Store">
+                <form method="get">
+                    <label for="City">City</label>
+                    <input type="text" name="City">
+                    <span class="or">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/orFlag.png" alt="or">
+                    </span>
+                    <label for="Zip">Zip</label>
+                    <input type="text" name="Zip">
+                    <label class="distance" for="Distance">Distance</label>
+                    <select class="distance">
+                        <option>5 miles</option>
+                        <option>10 miles</option>                                
+                        <option>25 miles</option>
+                        <option>50 miles</option>                                
+                        <option>75 miles</option>
+                        <option>100 miles</option>                                
+                    </select>
+                    <input id="findAStoreSubmit" type="submit" value="GO">
+                </form>
+            </div>
+        </aside>
+
         <div class="crossStitch"></div>
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
