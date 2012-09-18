@@ -768,6 +768,17 @@ header .shareBubble:hover{
     border-style: solid;  
     border-color: #e86e6f #ffffff #e86e6f #e86e6f;
 }
+.local-store-events .copy{
+    background:#ffffff;
+    padding:7px;
+    width:204px;
+}
+#sidebar .callout.local-store-events{
+    background:#F7F8F8;
+    margin-bottom:6px;
+    padding-bottom:7px;
+}
+
 /*------------------------------------------------------------ 
 		#hero
 ------------------------------------------------------------*/
