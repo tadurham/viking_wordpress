@@ -565,6 +565,16 @@ body{
 .center{
     text-align:center;
 }
+a.find-a-store-link{
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+    font-size:13px;
+    color:#e86e6f;
+    text-decoration:none;
+}
+a.find-a-store-link:hover{
+    text-decoration:underline;
+}
 
 /*------------------------------------------------------------ 
 		#menu-utility-navigation
@@ -872,7 +882,7 @@ header .shareBubble:hover{
     float:right;
     background:#ffffff;
 }
-.about-us #findAStore{
+.sidebar-enabled #findAStore{
     float:none;
 }
 .home #findAStore{
@@ -880,7 +890,7 @@ header .shareBubble:hover{
     width:230px;
     height:305px;
 }
-.about-us #findAStore{
+.sidebar-enabled #findAStore{
     padding:6px;
     width:221px;
     height:100%;
@@ -937,39 +947,39 @@ select.distance{
 }
 
 /*---- Adjustments for locations page ----*/
-.page-template-page-locations-php #findAStore{
+#findAStore.full_width_locations{
     float:none;
 }
-.page-template-page-locations-php #findAStore img{
+#findAStore.full_width_locations img{
     display: inline;
     margin-left:15px;
 }
-.page-template-page-locations-php #findAStore form{
+#findAStore.full_width_locations form{
     width:700px;
     margin:0;
     display: inline;
     position: relative;
     top:-40px;
 }
-.page-template-page-locations-php #findAStore form label{
+#findAStore.full_width_locations form label{
     display: inline;
     padding-right:5px;
     padding-left:15px;
 }
-.page-template-page-locations-php #findAStore form .distance{
+#findAStore.full_width_locations form .distance{
     float:none;
     display:inline;
 }
-.page-template-page-locations-php #findAStore form .or{
+#findAStore.full_width_locations form .or{
     display: inline;
     background:none;
 }
-.page-template-page-locations-php .findAStoreContainer{
+.full_width_locations .findAStoreContainer{
     background:#ffffff;
     height:115px;
     padding-top:16px;
 }
-.page-template-page-locations-php input#findAStoreSubmit{
+.full_width_locations #findAStoreSubmit{
     background:#939598;
     width:70px;
     height:30px;
@@ -990,20 +1000,12 @@ select.distance{
 .aboutus-header-wrap {
     background:#f7f8f8;
     padding: 4px;
-}
-.about-us article .image img{
-    float:left;
-}
-.about-us #sidebar{
-    margin-top:-20px;
+    width:709px;
 }
 .about-us article .copy{
     margin-left:230px;
 }
-.about-us article h3{
-    clear:none;
-}
-.about-us article .copy h3{
+.sidebar-enabled article .copy h3{
     margin-left:0;
 }
 .about-us .hyperlink{
@@ -1021,12 +1023,6 @@ select.distance{
 }
 .about-us .coreContent:last-child{
     border-bottom:none;
-}
-.about-us article{
-    width:722px;
-}
-.aboutus-header-wrap{
-    width:709px;
 }
 .page-template-page-aboutus-php .breadcrumbs{
     width:434px;
@@ -1245,7 +1241,27 @@ select.distance{
 .promos .couponRibbon:hover{
     bottom:31px;
 }
-
+/*------------------------------------------------------------ 
+		.sidebar-enabled pages
+------------------------------------------------------------*/
+.sidebar-enabled article .image img{
+    float:left;
+}
+.sidebar-enabled #sidebar{
+    margin-top:-20px;
+}
+.sidebar-enabled article h3{
+    clear:none;
+}
+.sidebar-enabled article{
+    width:722px;
+}
+.page-template-page-generic-with-sidebar-php article{
+    width:722px;
+}
+.page-template-page-generic-with-sidebar-php .breadcrumbs{
+    width:434px;
+}
 
 /*------------------------------------------------------------ 
 		#footer
@@ -1253,6 +1269,7 @@ select.distance{
 #footer{
     background: url(images/footerFringe.png) left top repeat-x;
     padding-top:6px;
+    clear:both;
 }
 #footer .container{
     position: relative;

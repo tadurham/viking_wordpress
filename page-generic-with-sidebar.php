@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: About Us
+ * Template Name: Generic with Sidebar
  *
- * The template for About Us Page
  *
  * @package Viking
  * @since Viking 1.0
@@ -12,7 +11,7 @@ get_header(); ?>
 
 <?php if(has_post_thumbnail()): ?>
 <?php endif; ?>
-		<div id="primary" class="site-content sidebar-enabled about-us">
+		<div id="primary" class="site-content sidebar-enabled">
 			<div id="content" role="main">
                 <div id="sidebar">
                     <aside id="findAStore">
@@ -76,20 +75,11 @@ get_header(); ?>
 
                 	<div class="entry-content">
                         <h3><?php the_title(); ?></h3>
-    			
-            			<?php query_posts('category_name=about-us&order=ASC'); ?>
 
         				<?php while ( have_posts() ) : the_post(); ?>
                         <div class="coreContent">
-                            <div class="image">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
                             <div class="copy">
-                                <h3><?php the_title(); ?></h3>
                                 <?php the_content(); ?>
-                            </div>
-                            <div class="hyperlink">
-                                <a href="<?php echo get_post_meta($post->ID, 'find a store', true);?>">Find a Store ></a>
                             </div>
                         </div>
 				

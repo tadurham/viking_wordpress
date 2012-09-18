@@ -10,7 +10,7 @@
  ?>
  
 <?php get_header(); ?>
-        <aside id="findAStore">
+        <aside id="findAStore" class="full_width_locations">
             <div class="findAStoreContainer">
                 <img src="<?php bloginfo('template_directory'); ?>/images/findAStore.png" alt="Find A Store">
                 <form method="get">
