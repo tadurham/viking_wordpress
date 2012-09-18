@@ -10,15 +10,30 @@
  ?>
  
 <?php get_header(); ?>
-    <div class="locations-header-wrap">
-        <a href="/specials-and-promotions/">
-<img src="<?php echo get_template_directory_uri(); ?>/images/header-ourLocations.jpg" alt="" />
-        </a>
-    </div>
-        <div class="crossStitch"></div>
-		<div id="primary" class="site-content">
+		<div id="primary" class="site-content sidebar-enabled">
 			<div id="content" role="main">
+                <div id="sidebar">
+                                
+                    <div class="callout">
+                        <h3>Local Store Events</h3>
+                        <div class="copy">
+                            <div class="image">
+                                <img src="http://viking.sullivanbranding.com/wp-content/themes/Viking/images/callout_specialsAndPromotions.jpg" alt="">
+                            </div>
+                            <div class="calloutButton">
+                                <a href="/specials-and-promotions/"><img src="<?php echo get_template_directory_uri(); ?>/images/calloutBtn_SeeMore.png" alt="See More" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>                
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div id="subHero">
+                        <a href="/specials-and-promotions/">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/header-ourLocations.jpg" alt="" />
+                        </a>
+                    </div>                
+                    <div class="crossStitch"></div>
                 	<div class="entry-content">
                         <h3><?php the_title(); ?></h3>
                         <div class="coreContent">

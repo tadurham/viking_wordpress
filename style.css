@@ -692,6 +692,9 @@ header .shareBubble:hover{
 .breadcrumbs.shortWidth{
     width:434px;
 }
+.single-locations .breadcrumbs{
+    width:434px;
+}
 
 
 /*------------------------------------------------------------ 
