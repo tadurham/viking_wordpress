@@ -696,6 +696,60 @@ header .shareBubble:hover{
     width:434px;
 }
 
+/*------------------------------------------------------------ 
+		.local-store-events sidebar
+------------------------------------------------------------*/
+.local-store-events .eventsContainer{
+    border:1px solid #ededee;
+    padding:0 7px;
+}
+.local-store-events .copy{
+    background:#ffffff;
+    padding:7px;
+    width:204px;
+}
+#sidebar .callout.local-store-events{
+    background:#F7F8F8;
+    margin-bottom:6px;
+    padding-bottom:7px;
+}
+.local-store-events .eventDate{
+    float:right;
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size:11px;
+    color:#6d6e71;
+    margin: 0 0 10px 10px;
+}
+.local-store-events .eventTitle{
+    font-size:15px;
+    color:#6d6e71;
+    padding-bottom:7px;
+}
+.local-store-events .eventDescription{
+    font-size:10px;
+    color:#a1a2a5;
+}
+.local-store-events .eventLink{
+    text-align:right;
+    padding-top:7px;
+}
+.local-store-events .eventLink a{
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size:13px;
+    color:#6d6e71;
+    text-decoration:none;
+}
+.local-store-events .eventLink a:hover{
+    text-decoration:underline;
+}
+.local-store-events .event{
+    border-bottom: 2px dashed #b3d4d5;
+    padding: 25px 5px;   
+}
+.local-store-events .event:last-child{
+    border-bottom:none;
+}
+
 
 /*------------------------------------------------------------ 
 		.callouts
@@ -767,16 +821,6 @@ header .shareBubble:hover{
     border-width: 14px 7px;  
     border-style: solid;  
     border-color: #e86e6f #ffffff #e86e6f #e86e6f;
-}
-.local-store-events .copy{
-    background:#ffffff;
-    padding:7px;
-    width:204px;
-}
-#sidebar .callout.local-store-events{
-    background:#F7F8F8;
-    margin-bottom:6px;
-    padding-bottom:7px;
 }
 
 /*------------------------------------------------------------ 

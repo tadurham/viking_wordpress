@@ -20,8 +20,52 @@
                             <div class="image">
                                 <img src="<?php echo get_template_directory_uri();?>/images/classScheduleAndEvents.png" alt="Class Schedule & Upcoming Events" />
                             </div>
+                            <div class="eventsContainer">
+                                <div class="event">
+                                    <div class="eventDate">
+                                        5/25
+                                    </div>
+                                    <div class="eventTitle">
+                                        Beginners Sewing
+                                    </div>
+                                    <div class="eventDescription">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien, imperdiet vel euismod a, volutpat ac turpis. Aenean cursus lacus sit amet odio pretium vulputate.
+                                    </div>
+                                    <div class="eventLink">
+                                        <a href="#">Reserve Your Spot &gt;</a>
+                                    </div>
+                                </div>
+                                <div class="event">
+                                    <div class="eventDate">
+                                        5/25
+                                    </div>
+                                    <div class="eventTitle">
+                                        Machine Trade-In Party Night
+                                    </div>
+                                    <div class="eventDescription">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien, imperdiet vel euismod a, volutpat ac turpis. Aenean cursus lacus sit amet odio pretium vulputate.
+                                    </div>
+                                    <div class="eventLink">
+                                        <a href="#">Reserve Your Spot &gt;</a>
+                                    </div>
+                                </div>
+                                <div class="event">
+                                    <div class="eventDate">
+                                        5/25
+                                    </div>
+                                    <div class="eventTitle">
+                                        Machine Trade-In Party Night
+                                    </div>
+                                    <div class="eventDescription">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien, imperdiet vel euismod a, volutpat ac turpis. Aenean cursus lacus sit amet odio pretium vulputate.
+                                    </div>
+                                    <div class="eventLink">
+                                        <a href="#">Reserve Your Spot &gt;</a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="calloutButton">
-                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbon_seeFullCalendar.png" alt="See Full Calendar" /></a>
+                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbon_seeFullCalendar.png" alt="See Full Calendar" /></a>                            
                             </div>
                         </div>
                     </div>
