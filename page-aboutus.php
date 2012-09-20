@@ -15,30 +15,8 @@ get_header(); ?>
 		<div id="primary" class="site-content sidebar-enabled about-us">
 			<div id="content" role="main">
                 <div id="sidebar">
-                    <aside id="findAStore">
-                        <div class="findAStoreContainer">
-                            <div class="center">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/findAStore.png" alt="Find A Store">
-                            </div>
-                            <form method="get">
-                                <label for="City">City</label>
-                                <input type="text" name="City">
-                                <span class="or">or</span>
-                                <label for="Zip">Zip</label>
-                                <input type="text" name="Zip">
-                                <label class="distance" for="Distance">Distance</label>
-                                <select class="distance">
-                                    <option>5 miles</option>
-                                    <option>10 miles</option>                                
-                                    <option>25 miles</option>
-                                    <option>50 miles</option>                                
-                                    <option>75 miles</option>
-                                    <option>100 miles</option>                                
-                                </select>
-                                <input id="findAStoreSubmit" type="submit" value="GO">
-                            </form>
-                        </div>
-                    </aside>
+                     
+                    <?php get_template_part('sidebar-find-a-store'); ?>
                                 
                     <div class="callout">
                         <h3>Promotions And Specials</h3>

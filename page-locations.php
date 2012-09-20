@@ -13,7 +13,7 @@
         <aside id="findAStore" class="full_width_locations">
             <div class="findAStoreContainer">
                 <img src="<?php bloginfo('template_directory'); ?>/images/findAStore.png" alt="Find A Store">
-                <form method="get">
+                <form action="/our-locations/" method="get">
                     <label for="City">City</label>
                     <input type="text" name="City">
                     <span class="or">
