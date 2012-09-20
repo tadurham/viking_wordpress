@@ -1399,6 +1399,16 @@ select.distance{
 /*------------------------------------------------------------ 
 		Products Page
 ------------------------------------------------------------*/
+.products .entry-content .coreContent{
+    background:none;
+    padding:0;
+}
+#product-wrap-container{
+    width: 725px;
+    margin-left:203px;
+    background:#ffffff;
+    padding:10px;
+}
 .product-wrap {
     float: left;
     margin-bottom: 32px;
@@ -1407,6 +1417,7 @@ select.distance{
 
 .product-thumbnail {
     height: 111px;
+    text-align:center;
 }
 
 .product-thumbnail img {
@@ -1445,4 +1456,53 @@ select.distance{
 
 .second-col {
     margin: 0 24px;
+}
+
+#productCategories{
+    float:left;
+    width:195px;
+}
+.productCategoryTitle{
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size:13px;
+    color:#809aa9;
+    text-transform: uppercase;
+    margin-left:25px;
+    margin-top:10px;
+    margin-bottom:0;
+}
+.productCategoryTitle a{
+    color:#809aa9;
+    text-decoration: none;
+}
+.productCategoryTitle a:hover{
+    text-decoration: underline;
+}
+.productCategory{
+    margin-left:35px;
+    padding-bottom:5px;
+    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    color:#809aa9;
+}
+.productCategory a{
+    color:#809aa9;
+    text-decoration: none;
+}
+.productCategory a:hover{
+    text-decoration: underline;
+}
+.term-accessories .term-accessories a{
+    font-weight:bold;
+    font-style: italic;
+}
+.term-accessories .term-accessories a:before{
+    content:"> "
+}
+.term-software .term-software a{
+    font-weight:bold;
+    font-style: italic;
+}
+.term-software .term-software a:before{
+    content:"> "
 }

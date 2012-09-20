@@ -24,40 +24,52 @@
                     
                     <div class="crossStitch"></div>
                 	<div class="entry-content">
-                        <h3><?php the_title(); ?></h3>
                         <div class="coreContent">
-        <?php
-            query_posts(array(
-                'post_type' => 'product',
-                'posts_per_page' => '250',
-                'orderby' => 'menu_order',
-                'order' => 'ASC'
-            ));
-
-            if(have_posts()) : $count = 1; ?>
-
-            <?php while ( have_posts() ) : the_post(); ?>
-
-                <?php 
-                    $class = '';
-
-                    if($count == 1) $class = 'first-col';
-                    elseif($count == 2) $class = 'second-col';
-                    elseif($count == 3) $class = 'third-col';
-
-                    get_template_part( 'content', 'products' ); ?>
-
-                <?php 
-                      if($count == 3) 
-                        $count = 1; 
-                      else 
-                        $count++; 
-                ?>
-            <?php endwhile; // end of the loop. ?>
-        <?php else: ?>
-            <p>No products found.</p>
-        <?php endif; ?>
-
+                            <div id="productCategories">
+                                <h3 class="productCategoryTitle">Sort By</h3>
+                                <h4 class="productCategoryTitle"><a href="#">Machines</a></h4>
+                                    <p class="productCategory"><a href="#">Sewing</a></p>
+                                    <p class="productCategory"><a href="#">Embroidery</a></p>
+                                    <p class="productCategory"><a href="#">Quilting</a></p>
+                                    <p class="productCategory"><a href="#">Sergers</a></p>
+                                <h4 class="productCategoryTitle"><a href="<?php bloginfo('url'); ?>/product-type/software/">Software</a></h4>
+                                <h4 class="productCategoryTitle"><a href="<?php bloginfo('url'); ?>/product-type/accessories/">Accessories</a></h4>
+                                
+                            </div>
+                            <div id="product-wrap-container">
+                        <?php
+                            query_posts(array(
+                                'post_type' => 'product',
+                                'posts_per_page' => '250',
+                                'orderby' => 'menu_order',
+                                'order' => 'ASC'
+                            ));
+                
+                            if(have_posts()) : $count = 1; ?>
+                
+                            <?php while ( have_posts() ) : the_post(); ?>
+                
+                                <?php 
+                                    $class = '';
+                
+                                    if($count == 1) $class = 'first-col';
+                                    elseif($count == 2) $class = 'second-col';
+                                    elseif($count == 3) $class = 'third-col';
+                
+                                    get_template_part( 'content', 'products' ); ?>
+                
+                                <?php 
+                                      if($count == 3) 
+                                        $count = 1; 
+                                      else 
+                                        $count++; 
+                                ?>
+                            <?php endwhile; // end of the loop. ?>
+                        <?php else: ?>
+                            <p>No products found.</p>
+                        <?php endif; ?>
+                                    <div class="clearFix"></div>
+                                </div>
                             <div class="clearFix"></div>
                         </div>
                 	</div><!-- .entry-content -->
