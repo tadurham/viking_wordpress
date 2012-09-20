@@ -944,14 +944,14 @@ header .shareBubble:hover{
     float:none;
 }
 .home #findAStore{
-    padding-top:30px;
+    padding-top:15px;
     width:230px;
-    height:305px;
+    height:320px;
 }
 .products #findAStore{
-    padding-top:30px;
+    padding-top:15px;
     width:230px;
-    height:305px;
+    height:320px;
 }
 .sidebar-enabled #findAStore{
     padding:6px;
