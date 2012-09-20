@@ -948,6 +948,11 @@ header .shareBubble:hover{
     width:230px;
     height:305px;
 }
+.products #findAStore{
+    padding-top:30px;
+    width:230px;
+    height:305px;
+}
 .sidebar-enabled #findAStore{
     padding:6px;
     width:221px;

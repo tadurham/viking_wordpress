@@ -10,10 +10,19 @@
  ?>
  
 <?php get_header(); ?>
-        <div class="crossStitch"></div>
-		<div id="primary" class="site-content">
+		<div id="primary" class="site-content products">
 			<div id="content" role="main">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+                    <div class="contentContainer">
+                        <div id="hero">
+                            <?php the_post_thumbnail(); ?>
+                        </div>
+                        <?php get_sidebar('right-sidebar'); ?>
+                        <div class="clearFix"></div>
+                    </div>
+                    
+                    <div class="crossStitch"></div>
                 	<div class="entry-content">
                         <h3><?php the_title(); ?></h3>
                         <div class="coreContent">
