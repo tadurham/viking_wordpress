@@ -575,6 +575,11 @@ a.find-a-store-link{
 a.find-a-store-link:hover{
     text-decoration:underline;
 }
+ol li{
+    font-family: tahoma, sans-serif;
+    font-size: 11px;
+    color: #939598;
+}
 
 /*------------------------------------------------------------ 
 		#menu-utility-navigation
@@ -1037,8 +1042,10 @@ select.distance{
     display: inline;
     background:none;
 }
+#findAStore.full_width_locations{
+    background:#F7F8F8;
+}
 .full_width_locations .findAStoreContainer{
-    background:#ffffff;
     height:115px;
     padding-top:16px;
 }
@@ -1505,4 +1512,25 @@ select.distance{
 }
 .term-software .term-software a:before{
     content:"> "
+}
+
+/*------------------------------------------------------------ 
+		#findAClassMessage
+------------------------------------------------------------*/
+#findAClassMessage{
+    display: block;
+    background:#F7F8F8;
+    padding:7px;
+}
+#findAClassMessage span.icon{
+    float:left;
+    margin:10px;
+}
+#findAClassMessage .messageBox{
+    background:#ffffff;
+}
+#findAClassMessage p{
+    padding: 15px 10px 10px 70px;
+    font-weight: bold;
+    font-size: 12px;
 }

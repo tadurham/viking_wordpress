@@ -67,7 +67,7 @@ get_header(); ?>
                                 <?php the_content(); ?>
                             </div>
                             <div class="hyperlink">
-                                <a href="<?php echo get_post_meta($post->ID, 'find a store', true);?>">Find a Store ></a>
+                                <a href="/our-locations/">Find a Store ></a>
                             </div>
                         </div>
 				

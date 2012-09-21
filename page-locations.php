@@ -38,6 +38,15 @@
         <div class="crossStitch"></div>
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
+			<?php if(isset($_GET['find-a-class'])):?>
+			<div id="findAClassMessage">
+                <div class="messageBox">
+        			<span class="icon"><img src="<?php echo get_template_directory_uri();?>/images/infoIcon.png" alt="info" /></span>
+                    <p>If looking for a class schedule please search for the nearest store and "visit store page" for more information.</p>
+                    <div class="clearFix"></div>
+                </div>
+			</div>
+			<?php endif; ?>
 
 <?php
     if(isset($_GET['City']) || $_GET['Zip'] != '') {

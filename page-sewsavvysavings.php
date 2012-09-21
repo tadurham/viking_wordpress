@@ -29,7 +29,7 @@ get_header(); ?>
                         </form>                    
                     </div>
                     <div class="faqView">
-                        <a href="/faq/"><img src="<?php echo get_template_directory_uri(); ?>/images/faqView.png" alt="" /></a>
+                        <a href="<?php echo get_permalink('612'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/faqView.png" alt="" /></a>
                     </div>
                 </div>
 

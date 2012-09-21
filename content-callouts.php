@@ -7,7 +7,7 @@
                                 </div>
                                 <h4>See your local class schedule</h4>
                                 <p>Learn new techniques and tools to make your sewing the best it can be. Choose from a variety of embroidery, quilting, embroidery software and machine owners&rsquo; classes.</p>
-                                <div class="actionButton"><a class="ribbon" href="#link">See More</a></div>
+                                <div class="actionButton"><a class="ribbon" href="/our-locations/?find-a-class=1">See More</a></div>
                             </div>
                         </div>
                         <div class="callout">

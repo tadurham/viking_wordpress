@@ -73,7 +73,7 @@
                 </div>                
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div id="subHero">
-                        <a href="/specials-and-promotions/">
+                        <a href="/products/">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/header-ourLocations.jpg" alt="" />
                         </a>
                     </div>                
