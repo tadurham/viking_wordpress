@@ -61,9 +61,16 @@
                 <div class="">
                     <a class="storePage" href="<?php echo the_permalink(); ?>">Visit Store Page ></a>
                 </div>
-                <div class="">
-                    <a class="getDirections" href="#">Get Directions</a>
-                </div>
+                <?php //prepare google maps link
+                    $url="http://maps.google.com/maps?saddr=%20&daddr=";
+                    if(types_render_field('address')!=''):
+                    ?>
+                    <div class="">
+                        <a class="getDirections" href="<?php echo $url; echo types_render_field('address', array("raw"=>"true"));?>" target="_blank">Get Directions</a>
+                    </div>
+                    <?php 
+                    endif;
+                ?>
             </div>
             <div class="col4 locationsCol">
                 <div class="">
