@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6 {
 h1,
 h2,
 h3{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size:13px;
     color:#809aa9;
 }
@@ -566,7 +566,7 @@ body{
     text-align:center;
 }
 a.find-a-store-link{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-weight:normal;
     font-size:13px;
     color:#e86e6f;
@@ -676,7 +676,7 @@ header .shareBubble:hover{
     padding-left:287px;
     height:23px;
     background:#f7f8f8;
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size:10px;
     font-weight:bold;
     text-transform: uppercase;
@@ -720,7 +720,7 @@ header .shareBubble:hover{
 }
 .local-store-events .eventDate{
     float:right;
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size:11px;
     color:#6d6e71;
     margin: 0 0 10px 10px;
@@ -739,7 +739,7 @@ header .shareBubble:hover{
     padding-top:7px;
 }
 .local-store-events .eventLink a{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size:13px;
     color:#6d6e71;
     text-decoration:none;
@@ -809,7 +809,7 @@ header .shareBubble:hover{
     margin:0 50px 15px;
     display: block;
     padding-top:5px;
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size:13px;
     color:#ffffff;
     text-decoration:none;
@@ -909,7 +909,7 @@ header .shareBubble:hover{
     padding-bottom:6px;
 }
 .locations .col3 a.storePage{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-weight:normal;
     font-size:13px;
     color:#e86e6f;
@@ -1088,7 +1088,7 @@ select.distance{
     text-align:right;
 }
 .about-us .hyperlink a{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-weight:normal;
     font-size:13px;
     color:#e86e6f;
@@ -1204,7 +1204,7 @@ select.distance{
     color:#a02064;
 }
 .sew-savvy-savings .slabSerif{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
 }
 .sew-savvy-savings ul{
     list-style-position: inside;
@@ -1215,7 +1215,7 @@ select.distance{
     padding-right:45px;
     color:#a02064;
     font-size:14px;
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*------------------------------------------------------------ 
@@ -1476,7 +1476,7 @@ select.distance{
     width:195px;
 }
 .productCategoryTitle{
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size:13px;
     color:#809aa9;
     text-transform: uppercase;
@@ -1494,7 +1494,7 @@ select.distance{
 .productCategory{
     margin-left:35px;
     padding-bottom:5px;
-    font-family:Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
     color:#809aa9;
 }

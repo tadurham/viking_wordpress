@@ -22,7 +22,7 @@ get_header(); ?>
                         <h3>Promotions And Specials</h3>
                         <div class="copy">
                             <div class="image">
-                                <img src="http://viking.sullivanbranding.com/wp-content/themes/Viking/images/callout_specialsAndPromotions.jpg" alt="">
+                                <img src="http://viking.sullivanbranding.com/wp-content/themes/Viking/images/TruEmbroidery_promotions.jpg" alt="">
                             </div>
                             <div class="calloutButton">
                                 <a href="/specials-and-promotions/"><img src="<?php echo get_template_directory_uri(); ?>/images/calloutBtn_SeeMore.png" alt="See More" /></a>
