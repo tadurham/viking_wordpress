@@ -916,7 +916,8 @@ header .shareBubble:hover{
     text-decoration:none;
     text-transform: uppercase;
 }
-.locations .col3 a.getDirections{
+.locations .col3 a.getDirections,
+.storeMap a.getDirections{
     display: block;
     background: url(images/bannerGetDirections.png) center center no-repeat;
     width:171px;
@@ -924,10 +925,15 @@ header .shareBubble:hover{
     margin:100px auto 0;
     text-indent:-5124px;
 }
+.storeMap a.getDirections{
+    margin-top:25px;
+}
 .locations .col3 a.getDirections:hover{
     margin-top:99px;
 }
-
+.storeMap a.getDirections:hover{
+    margin-top:24px;
+}
 .storeCol {
     float: left;
     margin: 0 20px 0 0;

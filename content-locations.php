@@ -78,7 +78,7 @@
                         $lat=types_render_field('store-latitude');
                         $long=types_render_field('store-longitude');
                     ?>
-                    <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=200x200&maptype=terrain&zoom=13&sensor=false" alt="" />
+                    <a href="<?php echo $url; echo types_render_field('address', array("raw"=>"true"));?>" target="_blank"><img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=200x200&maptype=terrain&zoom=13&sensor=false" alt="" /></a>
                 </div>
             </div>
             <div class="clearFix"></div>
