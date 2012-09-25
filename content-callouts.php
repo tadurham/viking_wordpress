@@ -14,7 +14,7 @@
                             <h3>Specials And Promotions</h3>
                             <div class="copy">
                                 <div class="image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/callout_specialsAndPromotions.jpg" alt="" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/TruEmbroidery_promotions.jpg" alt="" />
                                 </div>
                                 <h4>Our latest specials and promotions</h4>
                                 <p>Be the first to know about current offers and coupons available at your local Viking Sewing Gallery or Ultimate Sewing Place store.</p>
