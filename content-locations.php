@@ -14,6 +14,14 @@
             <div class="col1 locationsCol">
                 <?php if(types_render_field('address')!=''):?>
                 <div class="address">
+                    <?php 
+                        $storeNumber = types_render_field('store-number');
+                        if($storeNumber == '' || $storeNumber == '' || $storeNumber == ''):
+                    ?>
+                    <p>Ultimate Sewing Place</p>
+                    <?php else: ?>
+                    <p>Inside JoAnn Fabric and Craft Stores</p>
+                    <?php endif; ?>
                     <p><?php echo(types_render_field('address')); ?></p>
                 </div>
                 <?php endif;?>

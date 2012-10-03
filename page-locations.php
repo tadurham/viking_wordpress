@@ -62,7 +62,7 @@
 
         $query .= "UPDATE stores, wp_postmeta SET stores.longitude = meta_value WHERE stores.post_id = `wp_postmeta`.post_id AND meta_key = 'wpcf-store-longitude';";
 
-        $query .= "SELECT * FROM stores WHERE GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance;
+        $query .= "SELECT * FROM stores WHERE GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance." ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))";
 
         include('inc/dbconn.inc');
 
@@ -89,24 +89,17 @@
             'posts_per_page' => '25',
             'post__in' => $storesInRange
         ));
+
+        if(have_posts()) : while ( have_posts() ) : the_post(); ?>
+
+            <?php get_template_part( 'content', 'locations' ); ?>
+
+        <?php endwhile; endif; 
+
     }
-    else {
-        query_posts(array(
-            'post_type' => 'locations',
-            'posts_per_page' => '25'
-        ));
+    else {  // find a store page shows no locations
     }
 ?>
-            <?php if(have_posts()) : ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'content', 'locations' ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-            <?php else: ?>
-                <p>No stores found in your area.</p>
-            <?php endif; ?>
-
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
 
