@@ -21,48 +21,40 @@
                                 <img src="<?php echo get_template_directory_uri();?>/images/classScheduleAndEvents.png" alt="Class Schedule & Upcoming Events" />
                             </div>
                             <div class="eventsContainer">
+                            <?php
+                                query_posts(array(
+                                    'post_type' => 'classes',
+                                    'posts_per_page' => '3',
+                                    'order'     => 'ASC',
+                                ));
+                            ?>
+                               <?php while ( have_posts() ) : the_post(); ?>
+                                   
                                 <div class="event">
-                                    <div class="eventDate">
-                                        5/25
-                                    </div>
-                                    <div class="eventTitle">
-                                        Beginners Sewing
-                                    </div>
-                                    <div class="eventDescription">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien, imperdiet vel euismod a, volutpat ac turpis. Aenean cursus lacus sit amet odio pretium vulputate.
-                                    </div>
-                                    <div class="eventLink">
-                                        <a href="#">Reserve Your Spot &gt;</a>
-                                    </div>
+                                   <?php if(types_render_field('event-date')!=''):?>
+                                       <div class="eventDate">
+                                            <?php echo(types_render_field('event-date')); ?>
+                                        </div>
+                                    <?php endif; ?>
+                                    
+                                    <?php if(1==1):?>
+                                        <div class="eventTitle">
+                                            <?php the_title()?>
+                                        </div>
+                                    <?php endif; ?>
+                                    
+                                        <div class="eventDescription">
+                                            <?php the_content(); ?>
+                                        </div>
+                                    
+                                        <div class="eventLink">
+                                            <a href="#">Reserve Your Spot &gt;</a>
+                                        </div>
                                 </div>
-                                <div class="event">
-                                    <div class="eventDate">
-                                        5/25
-                                    </div>
-                                    <div class="eventTitle">
-                                        Machine Trade-In Party Night
-                                    </div>
-                                    <div class="eventDescription">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien, imperdiet vel euismod a, volutpat ac turpis. Aenean cursus lacus sit amet odio pretium vulputate.
-                                    </div>
-                                    <div class="eventLink">
-                                        <a href="#">Reserve Your Spot &gt;</a>
-                                    </div>
-                                </div>
-                                <div class="event">
-                                    <div class="eventDate">
-                                        5/25
-                                    </div>
-                                    <div class="eventTitle">
-                                        Machine Trade-In Party Night
-                                    </div>
-                                    <div class="eventDescription">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in leo ante. Cras sem eros, congue at adipiscing at, laoreet eget mauris. Nulla magna sapien, imperdiet vel euismod a, volutpat ac turpis. Aenean cursus lacus sit amet odio pretium vulputate.
-                                    </div>
-                                    <div class="eventLink">
-                                        <a href="#">Reserve Your Spot &gt;</a>
-                                    </div>
-                                </div>
+                                <?php 
+                                    endwhile;
+                                    wp_reset_query();
+                                ?>
                             </div>
                             <div class="calloutButton">
                                 <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbon_seeFullCalendar.png" alt="See Full Calendar" /></a>                            
