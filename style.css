@@ -1540,3 +1540,13 @@ select.distance{
     font-weight: bold;
     font-size: 12px;
 }
+
+
+
+.resource-title {
+    font-size:15px;
+    font-family:tahoma, sans-serif;
+    font-weight:normal;
+    color:#809AA9;
+    margin-bottom:10px;
+}

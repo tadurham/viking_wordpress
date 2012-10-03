@@ -12,7 +12,7 @@
 <?php get_header(); ?>
         <div class="crossStitch"></div>
 		<div id="primary" class="site-content">
-			<div id="content" role="main">
+			<div id="content" class="entry-content" role="main">
             <?php
                 //list terms in a given taxonomy
                 $tax_terms = get_terms('resource-type', array( 'hide_empty' => 0 ));
@@ -21,7 +21,7 @@
                     $term_name = $tax_term->name;
                     $term_id = $tax_term->term_id;
             ?>
-                <div class="title"><?php echo $term_name; ?></div>
+                <div class="resource-title"><?php echo $term_name; ?></div>
     			<?php query_posts(array(
                     'post_type' => 'resources',
                     'posts_per_page' => 10,
