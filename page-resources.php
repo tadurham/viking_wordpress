@@ -15,7 +15,7 @@
 			<div id="content" role="main">
             <?php
                 //list terms in a given taxonomy
-                $tax_terms = get_terms('resource-type');
+                $tax_terms = get_terms('resource-type', array( 'hide_empty' => 0 ));
 
                 foreach($tax_terms as $tax_term) :
                     $term_name = $tax_term->name;
