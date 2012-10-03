@@ -27,11 +27,11 @@
                         <div class="coreContent">
                             <div id="productCategories">
                                 <h3 class="productCategoryTitle">Sort By</h3>
-                                <h4 class="productCategoryTitle"><a href="#">Machines</a></h4>
-                                    <p class="productCategory"><a href="#">Sewing</a></p>
-                                    <p class="productCategory"><a href="#">Embroidery</a></p>
-                                    <p class="productCategory"><a href="#">Quilting</a></p>
-                                    <p class="productCategory"><a href="#">Sergers</a></p>
+                                <h4 class="productCategoryTitle"><a href="<?php bloginfo('url'); ?>/product-type/machines/">Machines</a></h4>
+                                    <p class="productCategory"><a href="<?php bloginfo('url'); ?>/product-type/sewing/">Sewing</a></p>
+                                    <p class="productCategory"><a href="<?php bloginfo('url'); ?>/product-type/embroidery/">Embroidery</a></p>
+                                    <p class="productCategory"><a href="<?php bloginfo('url'); ?>/product-type/quilting/">Quilting</a></p>
+                                    <p class="productCategory"><a href="<?php bloginfo('url'); ?>/product-type/serger/">Sergers</a></p>
                                 <h4 class="productCategoryTitle"><a href="<?php bloginfo('url'); ?>/product-type/software/">Software</a></h4>
                                 <h4 class="productCategoryTitle"><a href="<?php bloginfo('url'); ?>/product-type/accessories/">Accessories</a></h4>
                                 
