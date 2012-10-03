@@ -33,11 +33,14 @@
                         'terms' => $term_id) )
                   ));
                 ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php if(have_posts()) : while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'content', 'resources' ); ?>
 
 				<?php endwhile; // end of the loop. ?>
+                <?php else: ?>
+                    <p>No resources posted in this category.</p>
+                <?php endif; ?>
 
             <?php endforeach; ?>
 			</div><!-- #content -->
