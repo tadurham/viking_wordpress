@@ -17,11 +17,11 @@ get_header(); ?>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/sss_checkMyPoints.png" alt="Check My Points" />
                         <form method="get">
                             <div class="fields">
-                                <label for="Name">Name</label>
-                                <input type="text" name="Name">
+                                <label for="Email">Email</label>
+                                <input type="text" name="Email">
                                 <span class="orGreen">or</span>
-                                <label for="Phone">Phone</label>
-                                <input type="text" name="Phone">
+                                <label for="CardNum">Card # (16 digits)</label>
+                                <input type="text" name="CardNum">
                             </div>
                             <div class="submit">
                                 <input type="submit" value="Log In">                                
