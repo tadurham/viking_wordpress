@@ -40,6 +40,9 @@
 <link href='http://fonts.googleapis.com/css?family=Arvo:700,400italic,700italic,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/script.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.easing.1.3.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>

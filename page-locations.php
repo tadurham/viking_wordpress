@@ -97,7 +97,9 @@
         <?php endwhile; endif; 
 
     }
-    else {  // find a store page shows no locations
+    else {  
+        // Find-a-store page has no input and shows "landing" page
+        get_template_part('content', 'map-landing');
     }
 ?>
 			</div><!-- #content -->
