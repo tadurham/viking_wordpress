@@ -21,7 +21,10 @@
                     $term_name = $tax_term->name;
                     $term_id = $tax_term->term_id;
             ?>
-                <div class="resource-title"><?php echo $term_name; ?></div>
+
+                <article>
+                	<div class="entry-content">
+                        <h3><a class="toggle" href=""><?php echo $term_name; ?></a></h3>
     			<?php query_posts(array(
                     'post_type' => 'resources',
                     'posts_per_page' => 10,
@@ -39,9 +42,17 @@
 
 				<?php endwhile; // end of the loop. ?>
                 <?php else: ?>
-                    <p>No resources posted in this category.</p>
+                        <div class="coreContent no-resources">
+                            <div class="copy">
+                        		<div class="description">
+                                    No resources posted in this category.
+                        		</div>
+                    		</div>
+                            <div class="clearFix"></div>
+                        </div>
                 <?php endif; ?>
-
+                    </div>
+                </article>
             <?php endforeach; ?>
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->

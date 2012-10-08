@@ -6,14 +6,14 @@
  * @since Viking 1.0
  */
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-content">
-        <h3><?php the_title(); ?></h3>
-        <?php the_content(); ?>
-        <a href="<?php echo get_post_meta($post->ID, 'wpcf-resource-file', true); ?>">Download File</a>
-        <!--
-        <a href="<?php echo types_render_field('resource-file', array()); ?>">Download File</a>
-        //-->
-	</div><!-- .entry-content -->
-</article><!-- #post-<?php the_ID(); ?> -->
+        <div class="coreContent" id="post-<?php the_ID(); ?>">
+            <div class="copy">
+        		<div class="description">
+                    <a class="download" href="<?php echo get_post_meta($post->ID, 'wpcf-resource-file', true); ?>" target="_blank" ><img src="<?php echo get_template_directory_uri(); ?>/images/ribbonDownloadFile.png" alt="Download File" /></a>        		                    
+                    <?php the_title(); ?>
+                    <p class="small"><?php the_date(); ?> at <?php the_time(); ?></p>
+                    <?php the_content(); ?>            		
+        		</div>
+    		</div>
+            <div class="clearFix"></div>
+        </div>

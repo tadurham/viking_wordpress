@@ -19,7 +19,7 @@
                     $lat=types_render_field('store-latitude');
                     $long=types_render_field('store-longitude');
                 ?>
-                <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=160x160&maptype=terrain&zoom=13&sensor=false" alt="" />
+                <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:red%7Clabel:%7C<?php echo $lat; ?>,<?php echo $long; ?>&size=160x160&maptype=terrain&zoom=8&sensor=false" alt="" />
             </div>
         </div>
         
