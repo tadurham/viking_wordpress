@@ -144,3 +144,15 @@ function my_remove_menu_pages() {
     remove_menu_page('link-manager.php');
     remove_menu_page('edit-comments.php');	
 }
+
+/* CUSTOM LOGIN PAGE */
+function custom_login_header_url($url) {
+  return get_bloginfo('url');
+}
+add_filter( 'login_headerurl', 'custom_login_header_url' );
+
+function custom_login_css() {
+  echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/style/login-style.css" />';
+}
+add_action('login_head', 'custom_login_css');
+
