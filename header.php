@@ -42,6 +42,8 @@
 <?php wp_head(); ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/script.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/modernizr.js"></script>
+
 
 </head>
 
