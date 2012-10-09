@@ -561,6 +561,7 @@ body{
 .contentContainer{
     padding:6px 6px 6px;
     background-color:#f7f8f8;
+    position: relative;
 }
 .center{
     text-align:center;
@@ -835,6 +836,35 @@ header .shareBubble:hover{
     float:left;
     margin:0;
     padding:0;
+}
+
+/*------------------------------------------------------------ 
+		.heroPager
+------------------------------------------------------------*/
+.heroPager{
+    position: absolute;
+    z-index:2500;
+    top:320px;
+    right:250px;
+}
+.heroPager .individualPager{
+    display: inline;
+    float:left;
+}
+.heroPager a{
+    text-indent:-5412px;
+    display:block;
+    margin:0 2px;
+    height:10px;
+    width:10px;
+    background:#819BA9;
+    border-radius: 20px;
+}
+.heroPager a:hover{
+    background-color:#939598;
+}
+.heroPager .activeSlide a{
+    background-color:#aaddde;
 }
 
 /*------------------------------------------------------------ 

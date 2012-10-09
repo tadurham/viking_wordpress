@@ -39,6 +39,10 @@ jQuery(document).ready(function(){
 		timeout: 4500,
 		speed: 1500,
 		cleartype: true,
+		pager: '.heroPager',
+		pagerAnchorBuilder: function(index, el) {
+            return '<div class="individualPager"><a href="#">&bull;</a></div>';
+        }
     });
 		//pager: '.slidenav',
 		//prev: '#slidePrev',

@@ -23,6 +23,8 @@
                                 endwhile; endif;
                             ?>
                         </div>
+                        <div class="heroPager">
+                        </div>
                         <?php get_sidebar('right-sidebar'); ?>
                         <div class="clearFix"></div>
                     </div>
