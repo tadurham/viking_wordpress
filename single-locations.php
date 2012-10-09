@@ -71,14 +71,12 @@
                     </div>                
                     <div class="crossStitch"></div>
                 	<div class="entry-content">
-                        <h3><?php the_title(); ?></h3>
+                        <h3><?php echo types_render_field('city-state'); ?></h3>
                         <div class="coreContent">
                             <div class="storeCol">
-                                <?php if(types_render_field('store-number')!=''):?>
                                 <div class="storeNumber">
-                                    <p>Store #:<?php echo(types_render_field('store-number')); ?></p>
+                                    <p>Store #: <?php the_title(); ?></p>
                                 </div>
-                                <?php endif; ?>
                                 <?php if(types_render_field('address')!=''):?>
                                 <div class="address">
                                     <p><?php echo(types_render_field('address')); ?></p>

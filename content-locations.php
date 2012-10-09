@@ -9,14 +9,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="entry-content">
-        <h3><?php the_title(); ?></h3>
+        <h3><?php echo types_render_field('city-state');?></h3>
         <div class="coreContent">
             <div class="col1 locationsCol">
                 <?php if(types_render_field('address')!=''):?>
                 <div class="address">
                     <?php 
-                        $storeNumber = types_render_field('store-number');
-                        if($storeNumber == '' || $storeNumber == '' || $storeNumber == ''):
+                        $storeNumberCheck = get_the_title();
+                        if($storeNumberCheck == '127' || $storeNumberCheck == '641' || $storeNumberCheck == '284'):
                     ?>
                     <p>Ultimate Sewing Place</p>
                     <?php else: ?>
@@ -59,11 +59,9 @@
                     <p><?php echo(types_render_field('store-description')); ?></p>
                 </div>
                 <?php endif; ?>
-                <?php if(types_render_field('store-number')!=''):?>
                 <div class="storeNumber">
-                    <p>Store #:<?php echo(types_render_field('store-number')); ?></p>
+                    <p>Store #: <?php the_title(); ?></p>
                 </div>
-                <?php endif; ?>
             </div>
             <div class="col3 locationsCol">
                 <div class="">
