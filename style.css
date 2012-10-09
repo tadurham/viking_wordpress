@@ -1542,46 +1542,6 @@ select.distance{
 }
 
 /*------------------------------------------------------------ 
-		map landing
-------------------------------------------------------------*/
-#mapLanding{
-    border-radius: 15px;
-    overflow:hidden;
-    background:#F7F8F8;
-}
-.mapTile{
-    position: relative;
-    overflow:hidden;
-    width:160px;
-    height:160px;
-    margin:0;
-    padding:0;
-    float:left;
-}
-.mapImage{
-    position: absolute;
-}
-.mapInfo{
-    position: absolute;
-    top:15px;
-}
-.mapInfo p{
-    text-align:center;
-    width:140px;
-    padding:0 10px;
-}
-.mapInfo p a.storePage{
-    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
-    font-weight:normal;
-    font-size:11px;
-    color:#e86e6f;
-    text-decoration:none;
-}
-.mapInfo p a.storePage:hover{
-    text-decoration: underline;
-}
-
-/*------------------------------------------------------------ 
 		.resource section
 ------------------------------------------------------------*/
 .resource-title {
