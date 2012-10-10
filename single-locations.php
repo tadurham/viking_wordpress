@@ -20,43 +20,9 @@
                             <div class="image">
                                 <img src="<?php echo get_template_directory_uri();?>/images/classScheduleAndEvents.png" alt="Class Schedule & Upcoming Events" />
                             </div>
-                            <div class="eventsContainer">
-                            <?php
-                                if(types_render_field('store-email')!=''){ $storeEmail=types_render_field('store-email', array("raw"=>"true"));}
-                                query_posts(array(
-                                    'post_type' => 'classes',
-                                    'posts_per_page' => '3',
-                                    'order'     => 'ASC',
-                                ));
-                            ?>
-                               <?php while ( have_posts() ) : the_post(); ?>
-                                   
-                                <div class="event">
-                                   <?php if(types_render_field('event-date')!=''):?>
-                                       <div class="eventDate">
-                                            <?php echo(types_render_field('event-date')); ?>
-                                        </div>
-                                    <?php endif; ?>
-                                    
-                                    <?php if(1==1):?>
-                                        <div class="eventTitle">
-                                            <?php the_title()?>
-                                        </div>
-                                    <?php endif; ?>
-                                    
-                                        <div class="eventDescription">
-                                            <?php the_content(); ?>
-                                        </div>
-                                    
-                                        <div class="eventLink">
-                                            <a href="http://viking.sullivanbranding.com/request-a-spot/?recipient=<?php echo $storeEmail; ?>&title=<?php the_title(); ?>">Reserve Your Spot &gt;</a>
-                                        </div>
-                                </div>
-                                <?php 
-                                    endwhile;
-                                    wp_reset_query();
-                                ?>
-                            </div>
+                            
+                            <?php get_template_part('sidebar-upcoming-events'); ?>
+
                             <div class="calloutButton">
                                 <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbon_seeFullCalendar.png" alt="See Full Calendar" /></a>                            
                             </div>
