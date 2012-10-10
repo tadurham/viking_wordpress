@@ -22,6 +22,7 @@
                             </div>
                             <div class="eventsContainer">
                             <?php
+                                if(types_render_field('store-email')!=''){ $storeEmail=types_render_field('store-email', array("raw"=>"true"));}
                                 query_posts(array(
                                     'post_type' => 'classes',
                                     'posts_per_page' => '3',
@@ -48,7 +49,7 @@
                                         </div>
                                     
                                         <div class="eventLink">
-                                            <a href="#">Reserve Your Spot &gt;</a>
+                                            <a href="http://viking.sullivanbranding.com/request-a-spot/?recipient=<?php echo $storeEmail; ?>&title=<?php the_title(); ?>">Reserve Your Spot &gt;</a>
                                         </div>
                                 </div>
                                 <?php 
