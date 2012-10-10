@@ -23,9 +23,6 @@
                             
                             <?php get_template_part('sidebar-upcoming-events'); ?>
 
-                            <div class="calloutButton">
-                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbon_seeFullCalendar.png" alt="See Full Calendar" /></a>                            
-                            </div>
                         </div>
                     </div>
 

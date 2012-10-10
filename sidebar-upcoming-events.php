@@ -34,7 +34,7 @@
                                         </div>
                                     
                                         <div class="eventLink">
-                                            <a href="http://viking.sullivanbranding.com/request-a-spot/?recipient=<?php echo $storeEmail; ?>&title=<?php the_title(); ?>">Reserve Your Spot &gt;</a>
+                                            <a href="/request-a-spot/?recipient=<?php echo $storeEmail; ?>&title=<?php the_title(); ?>">Reserve Your Spot &gt;</a>
                                         </div>
                                 </div>
                                 <?php 
@@ -50,4 +50,10 @@
                                     endif;
                                     wp_reset_query();
                                 ?>
+                                
                             </div>
+
+                            <div class="calloutButton">
+                                <a href="/class-schedule-and-upcoming-events/?id=<?php echo $author;?>"><img src="<?php echo get_template_directory_uri(); ?>/images/ribbon_seeFullCalendar.png" alt="See Full Calendar" /></a>                            
+                            </div>
+                            
