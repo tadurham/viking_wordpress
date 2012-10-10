@@ -1572,6 +1572,53 @@ select.distance{
 }
 
 /*------------------------------------------------------------ 
+		classes and upcoming events page
+    		.page-template-page-classes-php
+------------------------------------------------------------*/
+.page-template-page-classes-php .classesWrap .copy{
+    margin-left:0;
+}
+.page-template-page-classes-php .classesWrap{
+    padding:25px;
+}
+.sidebar-enabled article .copy{
+    margin:0 10px;
+}
+.sidebar-enabled article .copy h3{
+    margin:0 0 10px 0;
+}
+.page-template-page-classes-php .hyperlink{
+    text-align:right;
+    float:right;
+    width:200px;
+}
+.page-template-page-classes-php .hyperlink a{
+    font-family:"Crete Round", Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+    font-size:13px;
+    color:#e86e6f;
+    text-decoration:none;
+    display:block;    
+}
+.page-template-page-classes-php .coreContent{
+    border-bottom:2px #99c6c7 dashed;
+}
+.page-template-page-classes-php .coreContent:last-child{
+    border-bottom:none;
+}
+.page-template-page-classes-php .breadcrumbs{
+    width:434px;
+}
+.page-template-page-classes-php .classesContent p{
+    padding-bottom:0;
+}
+/* setup for jquery actions */
+.page-template-page-classes-php .classesContent{
+    width:650px;
+}
+
+
+/*------------------------------------------------------------ 
 		.resource section
 ------------------------------------------------------------*/
 .resource-title {

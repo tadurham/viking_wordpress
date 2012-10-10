@@ -12,4 +12,24 @@ jQuery(document).ready(function(){
         console.log('Hiding resources');
         jQuery(this).parent().parent().children('.coreContent').slideUp();
     });
+    
+    // classes show/hide action
+    jQuery('.page-template-page-classes-php .classesContent').hide();
+    jQuery('.page-template-page-classes-php .hyperlink a.lessInfoLink').hide();
+    jQuery('.page-template-page-classes-php .moreInfoLink').click(function(){
+       //show content
+       jQuery(this).parent().parent().children('.copy').children('.classesContent').slideDown();
+       // swap link 
+       jQuery(this).hide();
+       jQuery(this).siblings('.lessInfoLink').show();
+    });
+
+    jQuery('.page-template-page-classes-php .lessInfoLink').click(function(){
+       //show content
+       jQuery(this).parent().parent().children('.copy').children('.classesContent').slideUp();
+       // swap link 
+       jQuery(this).hide();
+       jQuery(this).siblings('.moreInfoLink').show();
+    });
+
 }); 
