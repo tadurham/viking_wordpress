@@ -17,30 +17,8 @@ get_header(); ?>
                 <div id="sidebar">
                      
                     <?php get_template_part('sidebar-find-a-store'); ?>
-                                
-                    <div class="callout">
-                        <h3>Promotions And Specials</h3>
-                        <div class="copy">
-                            <div class="image">
-                                <img src="http://viking.sullivanbranding.com/wp-content/themes/Viking/images/TruEmbroidery_promotions.jpg" alt="">
-                            </div>
-                            <div class="calloutButton">
-                                <a href="/specials-and-promotions/"><img src="<?php echo get_template_directory_uri(); ?>/images/calloutBtn_SeeMore.png" alt="See More" /></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="callout">
-                        <h3>Local Class Schedule</h3>
-                        <div class="copy">
-                            <div class="image">
-                                <img src="http://viking.sullivanbranding.com/wp-content/themes/Viking/images/callout_findAClass.jpg" alt="">
-                            </div>
-                            <div class="calloutButton">
-                                <a href="/our-locations/"><img src="<?php echo get_template_directory_uri(); ?>/images/calloutBtn_SeeMore.png" alt="See More" /></a>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    <?php get_template_part('sidebar-callouts'); ?>
 
                 </div>
                 
