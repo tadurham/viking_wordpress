@@ -86,6 +86,8 @@
         /* close connection */
         $mysqli->close();
 
+        global $wpdb;
+
  $querystr = "
     SELECT * 
     FROM $wpdb->posts, $wpdb->postmeta, stores
@@ -94,9 +96,7 @@
     AND $wpdb->posts.post_type = 'locations'
     AND $wpdb->posts.post_date < NOW()
 AND $wpdb->posts.ID = stores.post_id 
-AND GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance." ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))
-ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))
- ";
+AND GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance." ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) ";
 
  $pageposts = $wpdb->get_results($querystr, OBJECT);
 
