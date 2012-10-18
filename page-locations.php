@@ -89,7 +89,7 @@
         global $wpdb;
 
  $querystr = "
-    SELECT $wpdb->posts.* 
+    SELECT DISTINCT $wpdb->posts.* 
     FROM $wpdb->posts, $wpdb->postmeta, stores
     WHERE $wpdb->posts.ID = $wpdb->postmeta.post_id 
     AND $wpdb->posts.post_status = 'publish' 
