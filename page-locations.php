@@ -62,12 +62,14 @@
 
         $query .= "UPDATE stores, wp_postmeta SET stores.longitude = meta_value WHERE stores.post_id = `wp_postmeta`.post_id AND meta_key = 'wpcf-store-longitude';";
 
-        $query .= "SELECT * FROM stores WHERE GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance." ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))";
+        //$query .= "SELECT * FROM stores WHERE GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance." ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))";
 
         include('inc/dbconn.inc');
 
         $mysqli = new mysqli($host, $username, $password, $database);
+        $mysqli->multi_query($query);
 
+        /*
         $storesInRange = array();
 
         if ($mysqli->multi_query($query)) {
@@ -84,22 +86,29 @@
         /* close connection */
         $mysqli->close();
 
-        query_posts(array(
-            'post_type' => 'locations',
-            'posts_per_page' => '25',
-            'post__in' => $storesInRange
-        ));
+ $querystr = "
+    SELECT * 
+    FROM $wpdb->posts, $wpdb->postmeta, stores
+    WHERE $wpdb->posts.ID = $wpdb->postmeta.post_id 
+    AND $wpdb->posts.post_status = 'publish' 
+    AND $wpdb->posts.post_type = 'locations'
+    AND $wpdb->posts.post_date < NOW()
+AND $wpdb->posts.ID = stores.post_id 
+AND GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' )) <= ".$distance." ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))
+ORDER BY GetDistance( '".$lng.", ".$lat.", 0', CONCAT_WS(  ', ', longitude, latitude,  '0' ))
+ ";
 
-        if(have_posts()) : while ( have_posts() ) : the_post(); ?>
+ $pageposts = $wpdb->get_results($querystr, OBJECT);
+
+?>
+ <?php if ($pageposts): ?>
+  <?php global $post; ?>
+  <?php foreach ($pageposts as $post): ?>
+    <?php setup_postdata($post); ?>
 
             <?php get_template_part( 'content', 'locations' ); ?>
-
-        <?php endwhile; endif; 
-
-    }
-    else {  // find a store page shows no locations
-    }
-?>
+    <?php endforeach; endif; ?>
+<?php } ?>
 			</div><!-- #content -->
 		</div><!-- #primary .site-content -->
 
