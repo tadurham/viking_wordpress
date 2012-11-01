@@ -189,9 +189,11 @@ add_action('admin_menu', 'remove_admin_menus');
 // Create the function to use in the action hook
 function remove_dashboard_widgets() {
   	if(!current_user_can('administrator')) { // anyone not an admin
+		remove_meta_box('dashboard_right_now', 'dashboard', 'normal');  // right now
 		remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal');  // incoming links
 		remove_meta_box('dashboard_plugins', 'dashboard', 'normal');   // plugins
-		remove_meta_box('dashboard_quick_press', 'dashboard', 'normal');  // quick press
+		remove_meta_box('dashboard_quick_press', 'dashboard', 'side');  // quick press
+		remove_meta_box('dashboard_recent_drafts', 'dashboard', 'side');  // recent drafts
 		remove_meta_box('dashboard_primary', 'dashboard', 'normal');   // wordpress blog
 		remove_meta_box('dashboard_secondary', 'dashboard', 'normal');   // other wordpress news
 	}
