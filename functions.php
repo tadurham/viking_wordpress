@@ -194,10 +194,24 @@ function remove_dashboard_widgets() {
 		remove_meta_box('dashboard_plugins', 'dashboard', 'normal');   // plugins
 		remove_meta_box('dashboard_quick_press', 'dashboard', 'side');  // quick press
 		remove_meta_box('dashboard_recent_drafts', 'dashboard', 'side');  // recent drafts
-		remove_meta_box('dashboard_primary', 'dashboard', 'normal');   // wordpress blog
-		remove_meta_box('dashboard_secondary', 'dashboard', 'normal');   // other wordpress news
+		remove_meta_box('dashboard_primary', 'dashboard', 'side');   // wordpress blog
+		remove_meta_box('dashboard_secondary', 'dashboard', 'side');   // other wordpress news
 	}
 } 
 
 // Hoook into the 'wp_dashboard_setup' action to register our function
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
+
+// Create the function to output the contents of our Dashboard Widget
+function dashboard_widget_function() {
+	// Display whatever it is you want to show
+	echo "Welcome to the Viking Singer Sewing Gallery site.";
+} 
+
+// Create the function use in the action hook
+function add_dashboard_widgets() {
+	wp_add_dashboard_widget('dashboard_widget', 'Welcome', 'dashboard_widget_function');	
+} 
+
+// Hook into the 'wp_dashboard_setup' action to register our other functions
+add_action('wp_dashboard_setup', 'add_dashboard_widgets' ); // Hint: For Multisite Network Admin Dashboard use wp_network_dashboard_setup instead of wp_dashboard_setup.
