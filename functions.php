@@ -218,3 +218,10 @@ function add_dashboard_widgets() {
 
 // Hook into the 'wp_dashboard_setup' action to register our other functions
 add_action('wp_dashboard_setup', 'add_dashboard_widgets' ); // Hint: For Multisite Network Admin Dashboard use wp_network_dashboard_setup instead of wp_dashboard_setup.
+
+
+function hide_that_stuff() {
+    if('locations' == get_post_type())
+        echo '<style type="text/css"> #favorite-actions {display:none;} .add-new-h2{display:none;} .tablenav{display:none;} </style>';
+}
+add_action('admin_head', 'hide_that_stuff');
