@@ -174,6 +174,9 @@ function remove_admin_menus () {
 	if (!current_user_can('administrator')) {
 		array_walk($restrict_user, $f);
 		$restrict = array_merge($restrict, $restrict_user);
+
+        global $submenu;
+        unset($submenu['edit.php?post_type=locations'][10]); // Removes 'Add New'.
 	}
 	// remove menus
 	end($menu);
