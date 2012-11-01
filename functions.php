@@ -156,3 +156,14 @@ function custom_login_css() {
 }
 add_action('login_head', 'custom_login_css');
 
+//Manage Your Media Only
+function mymo_parse_query_useronly( $wp_query ) {
+    if ( strpos( $_SERVER[ 'REQUEST_URI' ], '/wp-admin/upload.php' ) !== false ) {
+        if ( !current_user_can( 'level_5' ) ) {
+            global $current_user;
+            $wp_query->set( 'author', $current_user->id );
+        }
+    }
+}
+
+add_filter('parse_query', 'mymo_parse_query_useronly' );
