@@ -7,6 +7,11 @@
  * @package Viking
  * @since Viking 1.0
  */
+    $redirect = "/employee-resources/";
+
+    if( !is_user_logged_in() ):
+        header("Location: ".wp_login_url( $redirect ));
+    else:
  ?>
  
 <?php get_header(); ?>
@@ -58,4 +63,4 @@
 		</div><!-- #primary .site-content -->
 
 <?php get_sidebar('pre-footer'); ?>
-<?php get_footer(); ?>
+<?php get_footer(); endif; ?>

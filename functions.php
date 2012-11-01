@@ -225,3 +225,8 @@ function hide_that_stuff() {
         echo '<style type="text/css"> #favorite-actions {display:none;} .add-new-h2{display:none;} .tablenav{display:none;} </style>';
 }
 add_action('admin_head', 'hide_that_stuff');
+
+function my_cookie_expiration( $expiration, $user_id, $remember ) {
+    return $remember ? $expiration : 600;
+}
+add_filter( 'auth_cookie_expiration', 'my_cookie_expiration', 99, 3 );
