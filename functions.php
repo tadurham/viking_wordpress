@@ -171,7 +171,7 @@ function remove_admin_menus () {
 	// WP localization
 	$f = create_function('$v,$i', 'return __($v);');
 	array_walk($restrict, $f);
-	if (!current_user_can('activate_plugins')) {
+	if (!current_user_can('administrator')) {
 		array_walk($restrict_user, $f);
 		$restrict = array_merge($restrict, $restrict_user);
 	}
@@ -185,3 +185,17 @@ function remove_admin_menus () {
 }
 
 add_action('admin_menu', 'remove_admin_menus');
+
+// Create the function to use in the action hook
+function remove_dashboard_widgets() {
+  	if(!current_user_can('administrator')) { // anyone not an admin
+		remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal');  // incoming links
+		remove_meta_box('dashboard_plugins', 'dashboard', 'normal');   // plugins
+		remove_meta_box('dashboard_quick_press', 'dashboard', 'normal');  // quick press
+		remove_meta_box('dashboard_primary', 'dashboard', 'normal');   // wordpress blog
+		remove_meta_box('dashboard_secondary', 'dashboard', 'normal');   // other wordpress news
+	}
+} 
+
+// Hoook into the 'wp_dashboard_setup' action to register our function
+add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
