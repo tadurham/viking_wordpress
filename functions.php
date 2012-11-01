@@ -138,13 +138,6 @@ add_action( 'wp_enqueue_scripts', 'viking_scripts' );
 /*---- Disable admin bar ----*/
 add_filter( 'show_admin_bar', '__return_false' );
 
-add_action( 'admin_menu', 'my_remove_menu_pages' );
-
-function my_remove_menu_pages() {
-    remove_menu_page('link-manager.php');
-    remove_menu_page('edit-comments.php');	
-}
-
 /* CUSTOM LOGIN PAGE */
 function custom_login_header_url($url) {
   return get_bloginfo('url');
@@ -167,3 +160,28 @@ function mymo_parse_query_useronly( $wp_query ) {
 }
 
 add_filter('parse_query', 'mymo_parse_query_useronly' );
+
+// remove unnecessary menus
+function remove_admin_menus () {
+	global $menu;
+	// all users
+	$restrict = explode(',', 'Links,Comments');
+	// non-administrator users
+	$restrict_user = explode(',', 'Posts,Promos,Products,Resources,Contact,Tools');
+	// WP localization
+	$f = create_function('$v,$i', 'return __($v);');
+	array_walk($restrict, $f);
+	if (!current_user_can('activate_plugins')) {
+		array_walk($restrict_user, $f);
+		$restrict = array_merge($restrict, $restrict_user);
+	}
+	// remove menus
+	end($menu);
+	while (prev($menu)) {
+		$k = key($menu);
+		$v = explode(' ', $menu[$k][0]);
+		if(in_array(is_null($v[0]) ? '' : $v[0] , $restrict)) unset($menu[$k]);
+	}
+}
+
+add_action('admin_menu', 'remove_admin_menus');
