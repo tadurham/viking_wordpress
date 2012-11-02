@@ -151,7 +151,7 @@ add_action('login_head', 'custom_login_css');
 
 //Manage Your Media Only
 function mymo_parse_query_useronly( $wp_query ) {
-    if ( strpos( $_SERVER[ 'REQUEST_URI' ], '/wp-admin/upload.php' ) !== false || $_GET['post_type'] == 'classes' ) {
+    if ( strpos( $_SERVER[ 'REQUEST_URI' ], '/wp-admin/upload.php' ) !== false || strpos( $_SERVER[ 'REQUEST_URI' ], '/wp-admin/media-upload.php' ) !== false || $_GET['post_type'] == 'classes' ) {
         if ( !current_user_can( 'level_5' ) ) {
             global $current_user;
             $wp_query->set( 'author', $current_user->id );
